@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="{{ site.description }}">
+    {% if site.keywords %}
+    <meta name="keywords" content="{{ site.keywords }}">
+    {% endif %}
+    {% if site.canonical %}
+    <link rel="canonical" href="{{ site.canonical }}"/>
+    {% endif %}
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png"/>
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png"/>
+<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="./assets/css/jemdocCustom.css" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="./assets/js/news-toggle.js"></script>
+<title>{{ site.title }} | {{site.affiliation}}</title>
+</head>
+<body>
+<header class="site-header{% if page.hero %} has-hero{% endif %}">
+    {% include navbar.html %}
+</header>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-content">
+<div class="content-container">
+{% if page.hero %}
+<!-- legacy avatar/header block hidden when hero is enabled -->
+{% elsif site.avatar %}
+<table class="imgtable"><tr><td>
+<a href="index.html"><img src="{{site.avatar}}" alt="alt text" height="210px" loading="lazy" decoding="async"/></a>&nbsp;</td>
+<td align="left">
+<!--
+<p><a href="">{{ site.title }}</a></p>
+-->
+
+<!-- Icons above position -->
+ <p>
+    {% if site.undergraduate %}
+      <img src="{{ site.undergraduate }}" alt="Undergraduate Icon" style="height:50px; margin-right:5px;" />
+    {% endif %}
+    {% if site.graduate %}
+      <img src="{{ site.graduate }}" alt="Graduate Icon" style="height:50px; margin-right:5px;" />
+    {% endif %}
+    {% if site.lab_icon %}
+      <img src="{{ site.lab_icon }}" alt="Lab Icon" style="height:50px;" />
+    {% endif %}
+</p>
+<p>{% if site.position %}
+{{ site.position }}<br />
+{% endif %}
+{% if site.department %}
+<a href="{{site.department_link}}">{{site.department}}</a> <br />
+{% endif %}
+{% if site.affiliation %}
+<a href="{{site.affiliation_link}}">{{site.affiliation}}</a> <br />
+{% endif %}</p>
+<p>
+{% if site.address %}
+{{site.address}}<br />
+{% endif %}
+{% if site.address %}
+Email: {{site.email}} <br />
+{% endif %}
+{% if site.phone %}
+Phone: {{site.phone}} <br />
+{% endif %}</p>
+<p>
+{% if site.google_scholar %}
+<a href="{{site.google_scholar}}">Google Scholar</a> 
+{% endif %}
+{% if site.github_link %} 
+ &middot; <a href="{{ site.github_link }}">Github</a> 
+{% endif %}
+{% if site.linkedin %}
+ &middot; <a href="{{ site.linkedin }}">LinkedIn</a>
+{% endif %}
+{% if site.twitter %}
+ &middot; <a href="{{ site.twitter }}">X</a>
+{% endif %}
+{% if site.resume %}
+ &middot; <a href="{{ site.resume }}">Curriculum Vitae</a>
+{% endif %}
+</p>
+</td></tr></table>
+{% endif %}
+{{ content }}
+
+<!--
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="news.html">More news</a></p>
+</div></div>
+-->
+ 
+<p hidden><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=0BV5WWkvubBh6O72_ES-0aHY-MlDJXUC2LUHQid3A4A&cl=ffffff&w=a"></script></p>
+<div id="footer">
+<div class="motto">
+<!-- Years of bloom once wrote the best refrain. -->
+</div>
+<div id="footer-text">
+Powered by <a href="https://github.com/jem/jemdoc">jemdoc</a>.
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+<script src="./assets/js/ui.js"></script>
+</body>
+</html>

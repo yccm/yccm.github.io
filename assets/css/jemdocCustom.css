@@ -1,0 +1,1780 @@
+/* Default css file for jemdoc. */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+table#tlayout {
+    border: none;
+    border-collapse: separate;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+:root {
+    --font-sans: "Figtree", -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    --font-serif: "Figtree", Georgia, "Noto Serif SC", "Source Han Serif SC", "STSong", "Songti SC", serif;
+}
+
+body {
+    background: white;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 21px;
+    padding-bottom: 8px;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Sticky frosted navbar */
+#layout-menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: saturate(140%) blur(8px);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    background: rgba(246, 246, 246, 0.8);
+    border-bottom: 1px solid rgba(221, 221, 221, 0.8);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.site-header.has-hero #layout-menu {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.4);
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    padding: 80px 16px 60px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(1200px 600px at 10% -10%, rgba(174,145,66,0.15), transparent),
+                radial-gradient(1000px 500px at 90% 0%, rgba(12,35,64,0.12), transparent),
+                linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.95));
+    z-index: -1;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-sticker {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 6px 14px rgba(12,35,64,0.18));
+    transform: rotate(2deg);
+    border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+    .hero-sticker { width: 88px; top: 10px; right: 10px; }
+}
+
+.hero-avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(12,35,64,0.12), 0 2px 6px rgba(12,35,64,0.08);
+    object-fit: cover;
+}
+
+.hero-title {
+    margin: 0 0 24px 0;
+    padding: 0;
+    border: 0;
+    font-size: 3.5rem;
+    color: #232323;
+}
+
+.hero-subtitle {
+    margin: 6px 0 32px;
+    color: #4a4a4a;
+    font-size: 1.5rem;
+}
+
+.hero-cta .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    margin-right: 12px;
+}
+
+.btn-primary {
+    background: #232323;
+    color: #fff !important;
+    border: 1px solid #232323;
+}
+.btn-primary:hover { background: #5AB7D6; border-color: #5AB7D6; }
+
+.btn-outline {
+    background: #ffffff;
+    color: #232323 !important;
+    border: 1px solid #232323;
+}
+.btn-outline:hover { color: #fff !important; background: #232323; }
+
+@media (max-width: 720px) {
+    .hero-inner { flex-direction: column; text-align: center; }
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid rgba(12,35,64,0.25);
+    background: rgba(255,255,255,0.9);
+    color: #232323;
+    box-shadow: 0 6px 18px rgba(12,35,64,0.12);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+#back-to-top:hover { background: #232323; color: #fff; }
+
+#layout-menu {
+	background: #f6f6f6;
+	border: 1px solid #dddddd;
+	padding: 0.5em 1em;
+	font-size: 1.21em;
+	width: 100%;
+	white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 1em 0;
+}
+
+.menu-items-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+#layout-menu td {
+	background: #f4f4f4;
+    vertical-align: top;
+}
+
+#layout-content {
+	padding-top: 0.0em;
+	padding-left: 1.0em;
+	padding-right: 1.0em;
+    border: none;
+    background: white;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu a {
+	line-height: 1.5em;
+	margin-left: 0.5em;
+}
+
+tt {
+    background: #ffffdd;
+}
+
+pre, tt {
+	font-size: 95%;
+	font-family: monaco, monospace;
+}
+
+a, a > tt {
+	color: #5AB7D6;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px #5AB7D6 dotted;
+	color: #5AB7D6;
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
+	color: #232323;
+	border-bottom: 1px #5AB7D6 solid;
+}
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: #232323;
+	text-decoration: none;
+}
+#layout-menu a:hover {
+	text-decoration: none;
+	color: #5AB7D6;
+}
+
+div.menu-category {
+	border-bottom: none;
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-weight: bold;
+	color: #232323;
+	margin-right: 2em;
+}
+
+div.menu-item {
+	padding-left: 0;
+	text-indent: 0;
+	display: inline-block;
+}
+
+div#toptitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 1.5em;
+	border-bottom: 3px double #232323;
+}
+
+/* Reduce space if we begin the page with a title. */
+div#toptitle + h2, div#toptitle + h3 {
+	margin-top: -0.7em;
+}
+
+div#subtitle {
+	margin-top: 0.0em;
+	margin-bottom: 0.0em;
+	padding-top: 0em;
+	padding-bottom: 0.1em;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+	color: #232323;
+}
+
+
+h1, h2, h3 {
+	color: #232323;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #5AB7D6;
+    font-family: var(--font-serif);
+}
+
+h1 {
+	font-size: 165%;
+	padding-top: 1.2em;
+	border-bottom: 1px solid #5AB7D6;
+}
+
+h2 {
+	padding-top: 0.8em;
+	font-size: 125%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+	font-size: 110%;
+	border-bottom: none;
+}
+
+p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.6;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
+
+div#footer {
+	font-size: small;
+	border-top: 1px solid #c0c0c0;
+	padding-top: 0.1em;
+	margin-top: 4.0em;
+	color: #c0c0c0;
+}
+
+div#footer a {
+	color: #5AB7D6;
+}
+
+div#footer-text {
+	float: left;
+	padding-bottom: 8px;
+}
+
+ul, ol, dl {
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
+}
+
+dt {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+dl {
+	margin-left: 20px;
+}
+
+dd {
+	color: #222222;
+}
+
+dd > *:first-child {
+	margin-top: 0;
+}
+
+ul {
+	list-style-position: outside;
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+/* Custom bullet points for main content lists */
+#layout-content ul li {
+	position: relative;
+	padding-left: 12px;
+}
+
+#layout-content ul li::before {
+	content: "";
+	position: absolute;
+	left: -8px;
+	top: 0.6em;
+	transform: translateY(-50%);
+	width: 7px;
+	height: 7px;
+	background: linear-gradient(135deg, #5AB7D6 0%, #232323 100%);
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px rgba(174, 145, 66, 0.15);
+	transition: all 0.2s ease;
+}
+
+#layout-content ul li:hover::before {
+	transform: translateY(-50%) scale(1.3);
+	box-shadow: 0 0 0 3px rgba(174, 145, 66, 0.25);
+}
+
+/* Keep square bullets for nested lists */
+ul ul {
+	list-style-type: square;
+	padding-left: 20px;
+}
+
+ul ul li::before {
+	display: none;
+}
+
+/* Keep default bullets in special blocks */
+.info-block ul,
+.research-interest ul {
+	list-style-type: disc;
+}
+
+.info-block ul li::before,
+.research-interest ul li::before {
+	display: none;
+}
+
+p + ul, p + ol {
+	margin-top: -0.5em;
+}
+
+li ul, li ol {
+	margin-top: -0.3em;
+}
+
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+li p, dd p {
+	margin-bottom: 0.3em;
+}
+
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+p + div.codeblock {
+	margin-top: -0.6em;
+}
+
+div.codeblock, div.infoblock {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+	font-weight: bold;
+	color: #cd7b62;
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+	border: 1px solid silver;
+	padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+	background: #ffffee;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+	margin-top: 0.4em;
+}
+
+div.infoblock p {
+	margin-bottom: 0em;
+}
+
+div.infoblock li p, div.infoblock dd p {
+	margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+	margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+	background: #f6f6f6;
+}
+
+span.pycommand {
+	color: #000070;
+}
+
+span.statement {
+	color: #008800;
+}
+span.builtin {
+	color: #000088;
+}
+span.special {
+	color: #990000;
+}
+span.operator {
+	color: #880000;
+}
+span.error {
+	color: #aa0000;
+}
+span.comment, span.comment > *, span.string, span.string > * {
+	color: #606060;
+}
+
+@media print {
+	#layout-menu { display: none; }
+}
+
+#fwtitle {
+	margin: 2px;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+	margin-top: -0.7em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	margin-bottom: 0.0em;
+	padding-bottom: 0.1em;
+	padding-top: 0;
+	margin-top: 0.5em;
+	border-bottom: none;
+}
+
+img.eq {
+	padding: 0;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	margin: 0;
+}
+
+img.eqwl {
+	padding-left: 2em;
+	padding-top: 0.6em;
+	padding-bottom: 0.2em;
+	margin: 0;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+table + table {
+    margin-top: 1em;
+}
+
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+img {
+    border: none;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
+
+/* Publications */
+span.conference {
+	color: #5AB7D6;
+	font-weight: bold;
+}
+
+/* Add ND gold for publication titles */
+p.title {
+	color: #232323;
+	font-weight: bold;
+}
+
+/* Academic section highlights */
+span.highlight {
+	color: #5AB7D6;
+	font-weight: bold;
+}
+
+/* ========== News Timeline Styles ========== */
+.news-container {
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Timeline wrapper */
+.news-timeline {
+    position: relative;
+    padding: 20px 0 20px 50px;
+    margin: 20px 0;
+}
+
+/* Vertical timeline line */
+.news-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 3px;
+    background: linear-gradient(180deg, #5AB7D6 0%, #232323 100%);
+    border-radius: 2px;
+}
+
+/* Add styling for news items */
+.news-item {
+    position: relative;
+    margin-bottom: 8px;
+    padding: 6px 0 6px 15px;
+    background: transparent;
+    border-left: none;
+    transition: all 0.2s ease;
+    line-height: 1.6;
+}
+
+.news-item:hover {
+    transform: translateX(3px);
+}
+
+/* Timeline dot */
+.news-item::before {
+    content: '';
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #5AB7D6;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #5AB7D6;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover::before {
+    background: #232323;
+    box-shadow: 0 0 0 2px #232323;
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* News item date styling */
+.news-item strong {
+    color: #232323;
+    font-weight: 700;
+    font-size: 0.95em;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Last news item - no bottom margin */
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Style for section dividers */
+hr {
+	border: none;
+	height: 1px;
+	background-color: #5AB7D6;
+	margin: 20px 0;
+}
+
+/* Add styling for special info blocks */
+.info-block {
+	background-color: #f5f5f5;
+	border-left: 4px solid #232323;
+	padding: 10px 15px;
+	margin: 15px 0;
+}
+
+/* Add styling for research interest items */
+.research-interest {
+	padding-left: 15px;
+	border-left: 2px solid #5AB7D6;
+	margin-bottom: 10px;
+}
+
+/* Style for publication links */
+.publication-links a {
+	display: inline-block;
+	margin-right: 10px;
+	color: #5AB7D6;
+	text-decoration: none;
+}
+
+.publication-links a:hover {
+	text-decoration: underline;
+	color: #232323;
+}
+
+/* Enhanced styling for publications and talks with clear visual separation */
+.publication, .talk {
+	margin-bottom: 25px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid rgba(174, 145, 66, 0.3);
+	background-color: #fafafa;
+	padding: 12px;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(12, 35, 64, 0.1);
+	transition: all 0.2s ease-in-out;
+	font-size: 0.95em;
+}
+
+.publication:hover, .talk:hover {
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 5px rgba(12, 35, 64, 0.15);
+}
+
+/* Make content more compact within publications and talks */
+.publication p, .talk p {
+	margin-bottom: 4px;
+	line-height: 1.2;
+}
+
+.publication .title, .talk strong {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 1.05em;
+}
+
+.publication .title a {
+	color: #232323;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.publication .title a:hover {
+	color: #5AB7D6;
+	border-bottom: none;
+}
+
+/* --- Bookmark-style publication with left accent --- */
+.publication, .talk {
+    background: linear-gradient(135deg, rgba(174, 145, 66, 0.02) 0%, rgba(12, 35, 64, 0.01) 100%);
+    box-shadow: none;
+    border-bottom: none;
+    border-radius: 0 6px 6px 0;
+    padding: 12px 16px 12px 20px !important;
+    margin: 10px 0 !important;
+    position: relative;
+    border-left: 4px solid #5AB7D6;
+    transition: all 0.3s ease;
+}
+
+.publication:hover, .talk:hover {
+    background: linear-gradient(135deg, rgba(174, 145, 66, 0.04) 0%, rgba(12, 35, 64, 0.02) 100%);
+    border-left-color: #232323;
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(12, 35, 64, 0.08);
+}
+
+.publication + .publication, .talk + .talk {
+    margin-top: 10px !important;
+}
+
+.publication .title {
+    position: relative;
+    padding-left: 0;
+}
+
+/* Remove bullet points for publications */
+.publication .title::before {
+    display: none;
+}
+
+.publication:hover .title::before {
+    display: none;
+}
+
+.publication p {
+    margin-bottom: 2px;
+    line-height: 1.15;
+}
+
+.publication-links {
+    margin-top: 2px;
+}
+
+/* Compact publication links */
+.publication-links {
+	margin-top: 4px;
+	font-size: 0.9em;
+}
+
+.publication span.conference, .talk span.conference {
+	font-size: 0.95em;
+}
+
+/* Alternating colors for better distinction */
+.publication:nth-child(odd), .talk:nth-child(odd) {
+	background-color: rgba(12, 35, 64, 0.02);
+}
+
+/* Motto styling */
+.motto {
+    font-style: italic;
+    text-align: center;
+    color: #232323;
+    margin: 20px auto;
+    padding: 10px 0;
+    max-width: 80%;
+    position: relative;
+    font-size: 0.95em;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(174, 145, 66, 0.4);
+    border-bottom: 1px solid rgba(174, 145, 66, 0.4);
+}
+
+/* Adjust motto in footer */
+#footer .motto {
+    max-width: 100%;
+    margin: 0 0 15px 0;
+    padding: 8px 0;
+    font-size: 0.9em;
+    border-bottom: none;
+    color: #4a4a4a;
+}
+
+#footer .motto::before, 
+#footer .motto::after {
+    top: -3px;
+    font-size: 1.5em;
+}
+
+/* Centered responsive content container with fixed max width on large screens */
+.content-container {
+    max-width: 1100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* --- Compact spacing for publication/talk boxes --- */
+.publication, .talk {
+	margin-top: 8px;
+	margin-bottom: 8px; /* was 25px */
+	padding: 8px 10px; /* was 12px */
+}
+
+.publication + .publication, .talk + .talk {
+	margin-top: 6px; /* tighten gap between consecutive boxes */
+}
+
+.publication p, .talk p {
+	margin-bottom: 2px; /* was 4px */
+	line-height: 1.15; /* was 1.2 */
+}
+
+.publication .title, .talk strong {
+	margin-bottom: 3px; /* was 6px */
+}
+
+.publication:last-child, .talk:last-child {
+	margin-bottom: 0;
+}
+
+.motto::before, 
+.motto::after {
+    content: "\201C";
+    font-size: 2em;
+    color: #5AB7D6;
+    position: absolute;
+    top: 0;
+    line-height: 1;
+}
+
+.motto::before {
+    left: -20px;
+}
+
+.motto::after {
+    content: "\201D";
+    right: -20px;
+}
+
+/* News section collapsible styling */
+.news-item.hidden {
+    display: none;
+}
+
+.news-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.news-section-header h2 {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+/* News toggle container */
+.news-toggle-container {
+    text-align: center;
+    margin: -10px 0 20px 0;
+    padding: 0;
+}
+
+.toggle-news {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    color: #232323;
+    border: 2px solid #5AB7D6;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(12, 35, 64, 0.1);
+    font-weight: 600;
+    position: relative;
+}
+
+.toggle-news:hover {
+    background: linear-gradient(135deg, #232323 0%, #1a3a5a 100%);
+    color: #fff;
+    border-color: #232323;
+    box-shadow: 0 4px 12px rgba(12, 35, 64, 0.2);
+    transform: translateY(-2px);
+}
+
+.toggle-news::after {
+    content: ' ▼';
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.toggle-news.expanded::after {
+    transform: rotate(180deg);
+}
+
+/* Enhanced visibility for the toggle button */
+@keyframes subtle-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+.toggle-news {
+    animation: subtle-pulse 2s infinite ease-in-out;
+}
+
+.news-container {
+    margin-top: 40px;
+    position: relative;
+}
+
+/* Style for awards container */
+.awards-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style for award items */
+.award-item {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #232323;
+    line-height: 1.3;
+    font-size: 0.95em;
+}
+
+.award-item strong {
+    color: #232323;
+}
+
+/* Style for education section */
+.education-container {
+    margin: 20px 0;
+}
+
+.education-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fafafa;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(12, 35, 64, 0.08);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    box-shadow: 0 3px 6px rgba(12, 35, 64, 0.12);
+    background-color: #f8f9fa;
+}
+
+.education-period {
+    min-width: 135px;
+    font-size: 0.9em;
+    padding-top: 3px;
+    color: #666;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-degree {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 4px;
+}
+
+.education-school {
+    font-size: 0.95em;
+    margin-bottom: 3px;
+}
+
+.education-details {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+.education-school img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Style for internship section */
+.internship-container {
+    margin: 20px 0;
+}
+
+.internship-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fafafa;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(12, 35, 64, 0.08);
+    transition: all 0.3s ease;
+}
+
+.internship-item:hover {
+    box-shadow: 0 3px 6px rgba(12, 35, 64, 0.12);
+    background-color: #f8f9fa;
+}
+
+.internship-period {
+    min-width: 135px;
+    font-size: 0.9em;
+    padding-top: 3px;
+    color: #666;
+}
+
+.internship-content {
+    flex: 1;
+}
+
+.internship-position {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 4px;
+}
+
+.internship-company {
+    font-size: 0.95em;
+    margin-bottom: 3px;
+}
+
+.internship-company img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Ensure proper spacing between sections */
+h2 {
+    margin-top: 40px;
+    clear: both;
+}
+
+/* Highlight section */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 12px 0 8px;
+}
+
+.highlight-card {
+    background: #fff;
+    border: 1px solid rgba(12,35,64,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(12,35,64,0.08);
+}
+
+.highlight-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.highlight-caption {
+    padding: 10px 12px;
+    font-size: 0.92em;
+    color: #232323;
+    background: #fafafa;
+    border-top: 1px solid rgba(12,35,64,0.08);
+}
+
+@media (max-width: 1024px) {
+    .highlight-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+    .highlight-grid { grid-template-columns: 1fr; }
+}
+
+/* Tutorial header with background */
+.tutorial-header {
+    position: relative;
+    margin: -1em -1em 2em -1em;
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 20px rgba(12, 35, 64, 0.15);
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+        rgba(12,35,64,0.55) 0%,
+        rgba(12,35,64,0.35) 35%,
+        rgba(12,35,64,0.55) 100%),
+        radial-gradient(800px 300px at 10% 10%, rgba(174,145,66,0.25), transparent 60%);
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+    z-index: 3;
+    padding: 40px 30px;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.conference-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    backdrop-filter: saturate(140%) blur(8px);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 12px;
+    padding: 10px 14px;
+    width: fit-content;
+}
+
+.conference-logo {
+    height: 60px;
+    width: auto;
+    filter: brightness(1.08) contrast(1.05) drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+}
+
+.conference-details h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.conference-details p {
+    margin: 4px 0 0 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tutorial-header #toptitle {
+    margin-top: auto;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.tutorial-header #toptitle h1 {
+    color: white;
+    font-size: 2.6em;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.45);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+@media (max-width: 720px) {
+    .tutorial-header {
+        min-height: 250px;
+        margin: -1em -0.5em 2em -0.5em;
+    }
+    
+    .header-content {
+        padding: 30px 20px;
+        min-height: 250px;
+    }
+    
+    .conference-info { gap: 10px; padding: 8px 12px; }
+    
+    .conference-logo {
+        height: 50px;
+    }
+    
+    .tutorial-header #toptitle h1 { font-size: 2em; }
+}
+
+/* Tutorial page specific styling */
+.tutorial-authors {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border-left: 4px solid #5AB7D6;
+}
+
+/* Authors grid layout */
+.authors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: center;
+    justify-items: center;
+}
+
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(12, 35, 64, 0.08);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.author-card:hover {
+    box-shadow: 0 4px 12px rgba(12, 35, 64, 0.15);
+    transform: translateY(-2px);
+}
+
+.author-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #5AB7D6;
+    box-shadow: 0 4px 8px rgba(174, 145, 66, 0.2);
+}
+
+.author-info h3 {
+    margin: 0 0 4px 0;
+    padding: 0;
+    border: none;
+    font-size: 1.1em;
+    color: #232323;
+    font-weight: 600;
+}
+
+.author-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.3;
+}
+
+@media (max-width: 720px) {
+    .authors-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .author-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.tutorial-links {
+    margin: 20px 0;
+}
+
+.tutorial-links .btn {
+    margin: 0 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+/* Enhanced academic styling for tutorial content */
+#toptitle h1 {
+    font-size: 1.8em;
+    color: #232323;
+    text-align: center;
+    margin-bottom: 0.3em;
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    color: #5AB7D6;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+}
+
+/* Tutorial section styling */
+.tutorial-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(12, 35, 64, 0.08);
+}
+
+.tutorial-section h3 {
+    color: #232323;
+    border-bottom: 2px solid #5AB7D6;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Academic paper styling for abstract */
+.tutorial-authors + h2 {
+    margin-top: 2em;
+}
+
+/* Enhanced info blocks for tutorial */
+.info-block {
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 4px solid #232323;
+    background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 4px rgba(12, 35, 64, 0.06);
+}
+
+.info-block strong {
+    color: #232323;
+    font-weight: 600;
+}
+
+/* Tutorial outline styling */
+h3 + .research-interest {
+    margin-top: 10px;
+}
+
+.research-interest {
+    margin: 12px 0;
+    padding: 12px 15px;
+    border-left: 3px solid #5AB7D6;
+    background-color: rgba(174, 145, 66, 0.05);
+    border-radius: 0 4px 4px 0;
+}
+
+.research-interest strong {
+    color: #232323;
+    font-weight: 600;
+}
+
+/* Academic references styling */
+h3 + ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    font-size: 0.95em;
+}
+
+/* Reference list styling */
+.tutorial-section ul li,
+#layout-content h3 + ul li {
+    padding-left: 5px;
+    border-left: 2px solid rgba(174, 145, 66, 0.3);
+    margin-bottom: 10px;
+    background-color: rgba(174, 145, 66, 0.02);
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Italic styling for journal names */
+#layout-content ul li em {
+    color: #5AB7D6;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ========== Tablet/Medium Screen Adjustments ========== */
+@media (max-width: 1024px) {
+    #layout-menu {
+        font-size: 1em;
+        padding: 0.5em 0.8em;
+    }
+    
+    .menu-items-container {
+        gap: 1.2em;
+        flex-wrap: wrap;
+    }
+    
+    div.menu-category {
+        margin-right: 1em;
+    }
+}
+
+/* ========== Mobile Responsive Font Sizes ========== */
+@media (max-width: 768px) {
+    /* Increase base font size for mobile */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 8px;
+    }
+    
+    /* Fix table layout for mobile */
+    table#tlayout {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0;
+    }
+    
+    table#tlayout td {
+        display: block;
+        width: 100% !important;
+    }
+    
+    /* Ensure content container has proper padding */
+    .content-container {
+        padding: 0 12px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Adjust main layout content padding */
+    #layout-content {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Prevent images from overflowing */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Fix table images */
+    table.imgtable {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    table.imgtable td {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+    
+    /* Larger headings on mobile */
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    /* Improve paragraph readability */
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 1em;
+    }
+    
+    /* Menu font size */
+    #layout-menu {
+        font-size: 0.9em;
+        padding: 0.5em 0.8em;
+        white-space: normal;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+        margin: 0 0 0.5em 0;
+    }
+    
+    .menu-category {
+        margin-right: 0 !important;
+        margin-bottom: 0.3em;
+        font-size: 1em;
+    }
+    
+    .menu-items-container {
+        gap: 0.8em;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    div.menu-item {
+        font-size: 0.9em;
+    }
+    
+    #layout-menu a {
+        margin-left: 0.2em;
+        padding: 0.2em 0;
+    }
+    
+    /* Publication and talk font sizes */
+    .publication, .talk {
+        font-size: 1em;
+    }
+    
+    .publication .title, .talk strong {
+        font-size: 1.1em;
+    }
+    
+    /* Award items */
+    .award-item {
+        font-size: 1em;
+    }
+    
+    /* Education and internship items */
+    .education-item, .internship-item {
+        font-size: 1em;
+        flex-direction: column;
+    }
+    
+    .education-period, .internship-period {
+        min-width: auto;
+        margin-bottom: 8px;
+        font-size: 0.95em;
+    }
+    
+    /* List items */
+    ul, ol {
+        font-size: 1em;
+    }
+    
+    li {
+        margin-bottom: 0.6em;
+        line-height: 1.6;
+    }
+    
+    /* Hero section text */
+    .hero-title {
+        font-size: 1.6em;
+    }
+    
+    .hero-subtitle {
+        font-size: 2em;
+    }
+    
+    /* Button text */
+    .btn {
+        font-size: 0.95em;
+        padding: 10px 18px;
+    }
+    
+    /* Tutorial header */
+    .tutorial-header #toptitle h1 {
+        font-size: 1.8em;
+    }
+    
+    .conference-details h2 {
+        font-size: 1.1em;
+    }
+    
+    .conference-details p {
+        font-size: 0.95em;
+    }
+    
+    /* Author cards */
+    .author-info h3 {
+        font-size: 1.05em;
+    }
+    
+    .author-info p {
+        font-size: 0.95em;
+    }
+    
+    /* Info blocks - important for index.md */
+    .info-block {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+    
+    .info-block ul {
+        font-size: 1em;
+    }
+    
+    .info-block li {
+        line-height: 1.6;
+        font-size: 1em;
+        margin-bottom: 0.8em;
+    }
+    
+    /* Research interest blocks */
+    .research-interest {
+        font-size: 1em;
+        padding: 12px 15px;
+        margin-bottom: 12px;
+    }
+    
+    .research-interest strong {
+        font-size: 1em;
+    }
+    
+    /* News timeline mobile adjustments */
+    .news-timeline {
+        padding: 15px 0 15px 35px;
+        margin: 15px 0;
+    }
+    
+    .news-timeline::before {
+        left: 18px;
+        top: 15px;
+        bottom: 15px;
+        width: 2px;
+    }
+    
+    /* News items */
+    .news-item {
+        font-size: 1em;
+        margin-bottom: 8px;
+        padding: 5px 0 5px 8px;
+    }
+    
+    .news-item::before {
+        left: -22px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+    }
+    
+    .news-item:hover {
+        transform: translateX(2px);
+    }
+    
+    .news-item:hover::before {
+        transform: translateY(-50%) scale(1.2);
+    }
+    
+    /* Highlight cards */
+    .highlight-caption {
+        font-size: 1em;
+        padding: 12px 14px;
+    }
+    
+    /* Links and anchors */
+    a {
+        font-size: inherit;
+    }
+    
+    /* Conference/highlight spans */
+    span.conference {
+        font-size: 1em;
+    }
+    
+    span.highlight {
+        font-size: inherit;
+    }
+    
+    /* Tables for mobile */
+    table {
+        font-size: 1em;
+    }
+    
+    td {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+    
+    /* Ensure all text in layout-content is properly sized */
+    #layout-content {
+        font-size: 1em;
+    }
+    
+    /* News section header */
+    .news-section-header h2 {
+        font-size: 1.5em;
+    }
+    
+    /* Toggle button */
+    .toggle-news {
+        font-size: 0.95em;
+        padding: 10px 20px;
+    }
+    
+    .toggle-news::after {
+        font-size: 0.75em;
+    }
+    
+    /* Footer */
+    #footer {
+        font-size: 1em;
+    }
+    
+    #footer-text {
+        font-size: 0.95em;
+    }
+    
+    .motto {
+        font-size: 1em;
+        padding: 12px 0;
+    }
+}

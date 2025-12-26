@@ -1,0 +1,37 @@
+# Basic Information 
+title: Yuchen Ma | 马羽宸 
+position: Ph.D. Candidate in Computer Science
+affiliation: LMU Munich
+affiliation_link: https://www.lmu.de/en
+department: 
+department_link: 
+email: y.yuchenma@gmail.com | yuchen.ma@lmu.de
+address: Munich, Germany
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: Yuchen Ma, Causality, Deep Learning
+description: Research on deep learning and causal inference by Yuchen Ma.
+canonical: https://yccm.github.io/
+
+# Links 
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/citations?user=w6hmCEYAAAAJ&hl=en
+linkedin: https://linkedin.com/in/yccm
+github_link: https://github.com/yccm
+# resume: 
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: ./assets/img/profile.jpg
+favicon: ./assets/img/LMU.png
+favicon_dark: ./assets/img/LMU.png
+
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - jekyll-jemdoc.gemspec
