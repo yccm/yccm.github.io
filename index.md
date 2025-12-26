@@ -32,7 +32,7 @@ hero: true
 <!-- <img class="hero-sticker" src="assets/img/daily_life.png" alt="Daily life" loading="lazy" decoding="async"/> -->
 </section>
 
-## Profile
+## About Me
 
 Hello everyone, my name is Yuchen Ma. I am a PhD student in Computer Science at [LMU Munich](https://www.lmu.de/en/), supervised by [Professor Stefan Feuerriegel](https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de).  
 My research is broadly situated at the intersection of causal inference and deep learning, with prior work on causal foundation models and generative approaches, including diffusion models and early applications of large language models, for treatment effect estimation and potential outcome modeling under complex confounding. Going forward, my research is increasingly shifting toward large language models, with a focus on alignment, trustworthiness, and agentic AI, aiming to understand and improve the reliability, safety, and decision-making behavior of LLM-based systems in real-world settings.  
