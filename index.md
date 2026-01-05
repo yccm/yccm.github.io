@@ -56,6 +56,11 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <h2>News</h2>
 
 <div class="news-item">
+<strong>Jan. 2026</strong>&nbsp; We just released our CausalFM toolkit (<a href="https://causalfm-toolkit.readthedocs.io/en/latest/">docs link</a>), welcome to have a try!
+</div>
+
+
+<div class="news-item">
 <strong>Sep. 2025</strong>&nbsp; One paper is accepted by NeurIPS 2025. See you in San Diego!
 </div>
 
