@@ -23,7 +23,7 @@ body {
     background: white;
     font-family: var(--font-sans);
     font-weight: 400;
-    font-size: 21px;
+    font-size: 16px;
     padding-bottom: 8px;
     margin: 0;
     overflow-x: hidden;
@@ -105,22 +105,22 @@ html {
     margin: 0 0 24px 0;
     padding: 0;
     border: 0;
-    font-size: 3.5rem;
+    font-size: 2.4rem;
     color: #232323;
 }
 
 .hero-subtitle {
     margin: 6px 0 32px;
     color: #4a4a4a;
-    font-size: 1.5rem;
+    font-size: 1.05rem;
 }
 
 .hero-cta .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 6px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     transition: all 0.2s ease;
     margin-right: 12px;
 }
@@ -168,7 +168,7 @@ html {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding: 0.5em 1em;
-	font-size: 1.21em;
+	font-size: 0.95em;
 	width: 100%;
 	white-space: nowrap;
     text-align: left;
@@ -294,14 +294,14 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 165%;
+	font-size: 135%;
 	padding-top: 1.2em;
 	border-bottom: 1px solid #5AB7D6;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 125%;
+	font-size: 110%;
 }
 
 h2 + h3 {
@@ -309,7 +309,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 110%;
+	font-size: 100%;
 	border-bottom: none;
 }
 
@@ -317,7 +317,8 @@ p {
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
 	padding: 0;
-	line-height: 1.6;
+	line-height: 1.65;
+	font-size: 0.9em;
 }
 
 pre {
@@ -634,6 +635,7 @@ span.highlight {
     border-left: none;
     transition: all 0.2s ease;
     line-height: 1.6;
+    font-size: 0.9em;
 }
 
 .news-item:hover {
@@ -666,7 +668,7 @@ span.highlight {
 .news-item strong {
     color: #232323;
     font-weight: 700;
-    font-size: 0.95em;
+    font-size: 1em;
     display: inline-block;
     margin-right: 8px;
 }
@@ -690,6 +692,8 @@ hr {
 	border-left: 4px solid #232323;
 	padding: 10px 15px;
 	margin: 15px 0;
+	font-size: 0.9em;
+	line-height: 1.8;
 }
 
 /* Add styling for research interest items */
@@ -722,7 +726,7 @@ hr {
 	border-radius: 4px;
 	box-shadow: 0 1px 3px rgba(12, 35, 64, 0.1);
 	transition: all 0.2s ease-in-out;
-	font-size: 0.95em;
+	font-size: 0.9em;
 }
 
 .publication:hover, .talk:hover {
@@ -733,13 +737,13 @@ hr {
 /* Make content more compact within publications and talks */
 .publication p, .talk p {
 	margin-bottom: 4px;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 
 .publication .title, .talk strong {
 	display: block;
 	margin-bottom: 6px;
-	font-size: 1.05em;
+	font-size: 1em;
 }
 
 .publication .title a {
@@ -751,6 +755,11 @@ hr {
 .publication .title a:hover {
 	color: #5AB7D6;
 	border-bottom: none;
+}
+
+/* Make author name (bold text in publications) larger */
+.publication p strong, .talk p strong {
+	font-size: 1.1em;
 }
 
 /* --- Bookmark-style publication with left accent --- */
