@@ -151,12 +151,6 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <p><span class="conference">BMVC 2022</span></p>
 </div>
 
-<div class="publication">
-<p class="title">Foundation Models for Causal Inference via Prior-Data Fitted Networks.</p>
-<p><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel.</p>
-<p><span class="conference">ArXiv</span></p>
-</div>
-
 <!-- <div class="publication">
 <p class="title">Consistent End-to-End Estimation for Counterfactual Fairness with Generative Models.</p>
 <p>Valentyn Melnychuk, <strong>Yuchen Ma</strong>, Dennis Frauen, Stefan Feuerriegel.</p>
