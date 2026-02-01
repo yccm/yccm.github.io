@@ -35,17 +35,16 @@ hero: true
 ## About Me
 
 Hello everyone, my name is Yuchen Ma. I am a PhD student in Computer Science at [LMU Munich](https://www.lmu.de/en/), supervised by [Professor Stefan Feuerriegel](https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de).  
-My research is broadly situated at the intersection of causal inference and deep learning, with prior work on causal foundation models and generative approaches, including diffusion models and early applications of large language models, for treatment effect estimation and potential outcome modeling under complex confounding. Going forward, my research is increasingly shifting toward large language models, with a focus on alignment, trustworthiness, and agentic AI, aiming to understand and improve the reliability, safety, and decision-making behavior of LLM-based systems in real-world settings.  
-More broadly, my goal is to develop generalizable, interpretable, and causally grounded generative models that can support reliable decision-making in real-world domains such as healthcare, social science, and business applications.  
+My research is primarily focused on causal inference and large language models, with emphasis on alignment, trustworthiness, and agentic AI.  
 I’m very happy to [connect and discuss potential collaborations](mailto:yuchen.ma@lmu.de).  
 
 ## Research Focus
 
 <div class="info-block">
   <ul>
-    <li><strong>Causal Foundation Models:</strong> This research focuses on developing foundation models with causal structure for treatment effect estimation and counterfactual reasoning, aiming to enable robust generalization beyond correlational learning.</li>
-    <li><strong>Generative Models (Diffusion Models / LLMs) for Causal Inference:</strong> This line of work explores diffusion models and large language models as generative tools for causal inference, with an emphasis on modeling potential outcome distributions and handling high-dimensional or text-based confounding.</li>
-    <li><strong>LLM Alignment and Agentic AI:</strong> This research studies alignment methods and agentic AI for large language models, with a focus on efficient data synthesis, personalization, and the application of agentic workflows to improve performance in decision-making tasks.</li>
+    <li><strong>LLM Alignment and Agentic AI:</strong> Develop alignment methods and agentic AI for large language models, with a focus on efficient data synthesis, personalization, prompt optimization, reinforcement learning, and applications of agentic workflows.</li>
+    <li><strong>Causal Foundation Models:</strong> Develop scalable transformer-based foundation models for Bayesian causal inference, enabling zero-shot, in-context learning of treatment effects with uncertainty quantification.</li>
+    <li><strong>Generative Models (Diffusion Models / LLMs) with Causal Inference:</strong> Explore diffusion models and large language models as generative tools for causal inference, with an emphasis on modeling distributions and handling text-based confounding.</li>
   </ul>
 </div>
 
