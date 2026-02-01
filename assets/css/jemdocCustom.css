@@ -75,7 +75,7 @@ html {
 .hero-inner {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
 }
 
 .hero-sticker {
@@ -110,9 +110,23 @@ html {
 }
 
 .hero-subtitle {
-    margin: 6px 0 32px;
+    margin: 6px 0 16px;
     color: #4a4a4a;
     font-size: 1.05rem;
+}
+
+.hero-about {
+    margin: 0.8em 0 1.2em 0;
+    padding: 0.8em 1.2em;
+    background: rgba(90, 183, 214, 0.08);
+    border-radius: 0 6px 6px 0;
+}
+
+.hero-about p {
+    font-size: 0.9em;
+    line-height: 1.65;
+    margin-bottom: 0;
+    color: #232323;
 }
 
 .hero-cta .btn {
@@ -138,6 +152,60 @@ html {
     border: 1px solid #232323;
 }
 .btn-outline:hover { color: #fff !important; background: #232323; }
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    color: #232323 !important;
+    border: 1px solid #232323;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.btn-icon:hover {
+    color: #fff !important;
+    background: #232323;
+    border-color: #232323;
+}
+
+.btn-icon svg {
+    flex-shrink: 0;
+}
+
+.btn-icon span {
+    white-space: nowrap;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.85;
+}
+
+.icon-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.icon-link svg {
+    flex-shrink: 0;
+}
+
+.icon-link img {
+    flex-shrink: 0;
+    object-fit: contain;
+}
 
 @media (max-width: 720px) {
     .hero-inner { flex-direction: column; text-align: center; }
@@ -691,8 +759,6 @@ hr {
 
 /* Add styling for special info blocks */
 .info-block {
-	background-color: #f5f5f5;
-	border-left: 4px solid #232323;
 	padding: 8px 15px;
 	margin: 5px 0 8px 0;
 	font-size: 0.9em;
@@ -1411,10 +1477,7 @@ h2 {
 .info-block {
     margin: 20px 0;
     padding: 15px 20px;
-    border-left: 4px solid #232323;
-    background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);
     border-radius: 0 6px 6px 0;
-    box-shadow: 0 2px 4px rgba(12, 35, 64, 0.06);
 }
 
 .info-block strong {
