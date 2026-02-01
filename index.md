@@ -55,6 +55,10 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <h2>News</h2>
 
 <div class="news-item">
+<strong>Jan. 2026</strong>&nbsp; One paper is accepted by ICLR 2026. See you in Rio de Janeiro, Brazil!
+</div>
+
+<div class="news-item">
 <strong>Jan. 2026</strong>&nbsp; We just released our CausalFM toolkit (<a href="https://causalfm-toolkit.readthedocs.io/en/latest/">docs link</a>), welcome to have a try!
 </div>
 
@@ -116,6 +120,12 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 </div> -->
 
 ## Publications
+
+<div class="publication">
+<p class="title">Foundation Models for Causal Inference via Prior-Data Fitted Networks.</p>
+<p><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel.</p>
+<p><span class="conference">ICLR 2026</span></p>
+</div>
 
 <div class="publication">
 <p class="title">LLM-based Treatment Effect Estimation under Inference Time Text Confounding.</p>
