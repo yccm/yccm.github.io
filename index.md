@@ -10,32 +10,19 @@ hero: true
 <div class="hero-text">
 <h1 class="hero-title">Yuchen Ma | 马羽宸</h1>
 <p class="hero-subtitle">{{ site.position }} · <a href="{{site.affiliation_link}}">{{site.affiliation}}</a></p>
-<div class="hero-about">
-<p>Hello everyone, my name is Yuchen Ma. I am a PhD student in Computer Science at <a href="https://www.lmu.de/en/">LMU Munich</a>, supervised by <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de">Professor Stefan Feuerriegel</a>. My research is primarily focused on causal inference and large language models, with emphasis on alignment, trustworthiness, and agentic AI. I'm very happy to <a href="mailto:yuchen.ma@lmu.de">connect and discuss potential collaborations</a>.</p>
-</div>
 <div class="hero-cta">
-<a class="icon-link" href="{{site.google_scholar}}" aria-label="Google Scholar" title="Google Scholar">
-<img src="assets/images/google-scholar.png" alt="Google Scholar" width="32" height="32">
-</a>
+<a class="btn btn-outline" href="{{site.google_scholar}}">Google Scholar</a>
 {% if site.resume %}
-<a class="icon-link" href="{{site.resume}}" aria-label="Curriculum Vitae" title="CV">
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#232323" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-</a>
+<a class="btn btn-outline" href="{{site.resume}}">Curriculum Vitae</a>
 {% endif %}
 {% if site.github_link %}
-<a class="icon-link" href="{{ site.github_link }}" aria-label="GitHub" title="GitHub">
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#181717"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-</a>
+<a class="btn btn-outline" href="{{ site.github_link }}">GitHub</a>
 {% endif %}
 {% if site.linkedin %}
-<a class="icon-link" href="{{ site.linkedin }}" aria-label="LinkedIn" title="LinkedIn">
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-</a>
+<a class="btn btn-outline" href="{{ site.linkedin }}">LinkedIn</a>
 {% endif %}
 {% if site.twitter %}
-<a class="icon-link" href="{{ site.twitter }}" aria-label="X" title="X (Twitter)">
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#000000"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-</a>
+<a class="btn btn-outline" href="{{ site.twitter }}">X</a>
 {% endif %}
 </div>
 </div>
@@ -44,6 +31,11 @@ hero: true
 <div class="hero-bg"></div>
 <!-- <img class="hero-sticker" src="assets/img/daily_life.png" alt="Daily life" loading="lazy" decoding="async"/> -->
 </section>
+
+## About Me
+
+Hello everyone, my name is Yuchen Ma. I am a PhD student in Computer Science at [LMU Munich](https://www.lmu.de/en/), supervised by [Professor Stefan Feuerriegel](https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de).  
+I’m very happy to [connect and discuss potential collaborations](mailto:yuchen.ma@lmu.de).  
 
 ## Research Focus
 
@@ -61,10 +53,6 @@ hero: true
 <div class="news-timeline">
 
 <h2>News</h2>
-
-<div class="news-item">
-<strong>Jan. 2026</strong>&nbsp; One paper is accepted by ICLR 2026. See you in Rio de Janeiro, Brazil!
-</div>
 
 <div class="news-item">
 <strong>Jan. 2026</strong>&nbsp; We just released our CausalFM toolkit (<a href="https://causalfm-toolkit.readthedocs.io/en/latest/">docs link</a>), welcome to have a try!
@@ -130,12 +118,6 @@ hero: true
 ## Publications
 
 <div class="publication">
-<p class="title">Foundation Models for Causal Inference via Prior-Data Fitted Networks.</p>
-<p><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel.</p>
-<p><span class="conference">ICLR 2026</span></p>
-</div>
-
-<div class="publication">
 <p class="title">LLM-based Treatment Effect Estimation under Inference Time Text Confounding.</p>
 <p><strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel.</p>
 <p><span class="conference">NeurIPS 2025</span></p>
@@ -157,6 +139,12 @@ hero: true
 <p class="title">Distilling Knowledge from Self-Supervised Teacher by Embedding Graph Alignment.</p>
 <p><strong>Yuchen Ma</strong>, Yanbei Chen, Zeynep Akata.</p>
 <p><span class="conference">BMVC 2022</span></p>
+</div>
+
+<div class="publication">
+<p class="title">Foundation Models for Causal Inference via Prior-Data Fitted Networks.</p>
+<p><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel.</p>
+<p><span class="conference">ArXiv</span></p>
 </div>
 
 <!-- <div class="publication">
