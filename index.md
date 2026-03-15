@@ -55,11 +55,11 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <h2>News</h2>
 
 <div class="news-item">
-<strong>Mar. 2026</strong>&nbsp; I will join Microsoft Research as a research scientist intern this summer, see you in Seattle!
+<strong>Mar. 2026</strong>&nbsp; I will join <strong>Microsoft Research</strong> as a research scientist intern this summer, see you in Seattle!
 </div>
 
 <div class="news-item">
-<strong>Jan. 2026</strong>&nbsp; One paper is accepted by ICLR 2026. See you in Rio de Janeiro, Brazil!
+<strong>Jan. 2026</strong>&nbsp; One paper is accepted by <strong>ICLR 2026</strong>. See you in Rio de Janeiro, Brazil!
 </div>
 
 <div class="news-item">
@@ -68,15 +68,15 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 
 
 <div class="news-item">
-<strong>Sep. 2025</strong>&nbsp; One paper is accepted by NeurIPS 2025. See you in San Diego!
+<strong>Sep. 2025</strong>&nbsp; One paper is accepted by <strong>NeurIPS 2025</strong>. See you in San Diego!
 </div>
 
 <div class="news-item">
-<strong>May. 2025</strong>&nbsp; One paper is accepted by KDD 2025. See you in Toronto!
+<strong>May. 2025</strong>&nbsp; One paper is accepted by <strong>KDD 2025</strong>. See you in Toronto!
 </div>
 
 <div class="news-item">
-<strong>Sep. 2024</strong>&nbsp; One paper is accepted by NeurIPS 2024. See you in Vancouver!
+<strong>Sep. 2024</strong>&nbsp; One paper is accepted by <strong>NeurIPS 2024</strong>. See you in Vancouver!
 </div>
 
 </div>
