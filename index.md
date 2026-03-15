@@ -55,6 +55,10 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <h2>News</h2>
 
 <div class="news-item">
+<strong>Mar. 2026</strong>&nbsp; I will join Microsoft Research as a research scientist intern this summer, see you in Seattle!
+</div>
+
+<div class="news-item">
 <strong>Jan. 2026</strong>&nbsp; One paper is accepted by ICLR 2026. See you in Rio de Janeiro, Brazil!
 </div>
 
