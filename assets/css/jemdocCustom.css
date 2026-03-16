@@ -146,7 +146,7 @@ html {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 6px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.85rem;
     transition: all 0.2s ease;
     margin-right: 12px;
@@ -175,7 +175,7 @@ html {
     border: 1px solid #232323;
     padding: 10px 16px;
     border-radius: 6px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.85rem;
     transition: all 0.2s ease;
     margin-right: 12px;
@@ -324,7 +324,7 @@ div.menu-category {
 	margin-top: 0;
 	padding-top: 0;
 	padding-bottom: 0;
-	font-weight: bold;
+	font-weight: 600;
 	color: #232323;
 	margin-right: 2em;
 }
@@ -358,7 +358,7 @@ em {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: 600;
 	color: #232323;
 }
 
@@ -538,7 +538,7 @@ div.codeblock, div.infoblock {
 }
 
 div.blocktitle {
-	font-weight: bold;
+	font-weight: 600;
 	color: #cd7b62;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
@@ -653,7 +653,7 @@ table + table {
 }
 
 tr.heading {
-    font-weight: bold;
+    font-weight: 600;
     border-bottom: 2px solid black;
 }
 
@@ -669,19 +669,19 @@ table.imgtable, table.imgtable td {
 /* Publications */
 span.conference {
 	color: #5AB7D6;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 /* Add ND gold for publication titles */
 p.title {
 	color: #232323;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 /* Academic section highlights */
 span.highlight {
 	color: #5AB7D6;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 /* ========== News Timeline Styles ========== */
@@ -751,7 +751,7 @@ span.highlight {
 /* News item date styling */
 .news-item strong {
     color: #232323;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1em;
     display: inline-block;
     margin-right: 8px;
@@ -1120,7 +1120,7 @@ hr {
 
 .education-degree {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 600;
     color: #232323;
     margin-bottom: 4px;
 }
@@ -1175,7 +1175,7 @@ hr {
 
 .internship-position {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 600;
     color: #232323;
     margin-bottom: 4px;
 }
@@ -1312,7 +1312,7 @@ h2 {
     border: none;
     color: white;
     font-size: 1.25em;
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -1337,7 +1337,7 @@ h2 {
     border: none;
     text-shadow: 0 3px 14px rgba(0, 0, 0, 0.45);
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.4px;
 }
 
@@ -1453,7 +1453,7 @@ h2 {
     text-align: center;
     margin-bottom: 0.3em;
     font-family: var(--font-serif);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #subtitle {
@@ -1462,7 +1462,7 @@ h2 {
     color: #5AB7D6;
     font-style: italic;
     margin-bottom: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Tutorial section styling */
@@ -1538,7 +1538,7 @@ h3 + ul li {
 #layout-content ul li em {
     color: #5AB7D6;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* ========== Tablet/Medium Screen Adjustments ========== */
