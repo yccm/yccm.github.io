@@ -86,46 +86,6 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 </div>
 
 
-## Education
-
-<div class="education-container">
-  <div class="education-item">
-    <div class="education-period">
-      <strong>Nov. 2022</strong><br>
-      <strong>Present</strong>
-    </div>
-    <div class="education-content">
-      <div class="education-degree">Ph.D. in Computer Science</div>
-      <div class="education-school"><img src='assets/img/LMU.png' style='height: 1.3em; vertical-align: middle;'> LMU Munich, Germany</div>
-      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=en">Prof. Stefan Feuerriegel</a></div>
-    </div>
-  </div>
-
-  <div class="education-item">
-    <div class="education-period">
-      <strong>Oct. 2019</strong><br>
-      <strong>Sep. 2022</strong>
-    </div>
-    <div class="education-content">
-      <div class="education-degree">M.Sc. in Mathematics & Computer Vision (NLP specialization)</div>
-      <div class="education-school"><img src='assets/img/Heidelberg_University.png' style='height: 1.3em; vertical-align: middle;'>Heidelberg University, Germany</div>
-      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=jQl17zsAAAAJ&hl=en">Prof. Zeynep Akata</a></div>
-    </div>
-  </div>
-
-  <div class="education-item">
-    <div class="education-period">
-      <strong>Sep. 2015</strong><br>
-      <strong>Jun. 2019</strong>
-    </div>
-    <div class="education-content">
-      <div class="education-degree">B.Sc. in Mathematics</div>
-      <div class="education-school"><img src='assets/img/shandong-university-logo.jpg' style='height: 1.3em; vertical-align: middle;'>Shandong University, China</div>
-      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=3WJMVQQAAAAJ&hl=en">Prof. Guanghui Wang</a></div>
-    </div>
-  </div>
-</div>
-
 ## Publications
 
 <div class="publication">
@@ -163,6 +123,46 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <p>Valentyn Melnychuk, <strong>Yuchen Ma</strong>, Dennis Frauen, Stefan Feuerriegel.</p>
 <p><span class="conference">Under Review</span></p>
 </div> -->
+
+## Education
+
+<div class="education-container">
+  <div class="education-item">
+    <div class="education-period">
+      <strong>Nov. 2022</strong><br>
+      <strong>Present</strong>
+    </div>
+    <div class="education-content">
+      <div class="education-degree">Ph.D. in Computer Science</div>
+      <div class="education-school"><img src='assets/img/LMU.png' style='height: 1.3em; vertical-align: middle;'> LMU Munich, Germany</div>
+      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=en">Prof. Stefan Feuerriegel</a></div>
+    </div>
+  </div>
+
+  <div class="education-item">
+    <div class="education-period">
+      <strong>Oct. 2019</strong><br>
+      <strong>Sep. 2022</strong>
+    </div>
+    <div class="education-content">
+      <div class="education-degree">M.Sc. in Mathematics & Computer Vision (NLP specialization)</div>
+      <div class="education-school"><img src='assets/img/Heidelberg_University.png' style='height: 1.3em; vertical-align: middle;'>Heidelberg University, Germany</div>
+      <div class="education-school">Advisor: Prof. Zeynep Akata</div>
+    </div>
+  </div>
+
+  <div class="education-item">
+    <div class="education-period">
+      <strong>Sep. 2015</strong><br>
+      <strong>Jun. 2019</strong>
+    </div>
+    <div class="education-content">
+      <div class="education-degree">B.Sc. in Mathematics</div>
+      <div class="education-school"><img src='assets/img/shandong-university-logo.jpg' style='height: 1.3em; vertical-align: middle;'>Shandong University, China</div>
+      <div class="education-school">Advisor: Prof. Guanghui Wang</div>
+    </div>
+  </div>
+</div>
 
 ## Experience
 
