@@ -55,6 +55,10 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <h2>News</h2>
 
 <div class="news-item">
+<strong>Apr. 2026</strong>&nbsp; We are organizing the <strong><a href="https://kdd26-relscifm.github.io/">RelSciFM @ KDD 2026</a></strong> workshop on Reliable Scientific Foundation Models. <strong>Call for Papers</strong> is open — submission deadline: April 30, 2026. Welcome to submit!
+</div>
+
+<div class="news-item">
 <strong>Mar. 2026</strong>&nbsp; I will join <strong>Microsoft Research</strong> as a research scientist intern this summer, see you in Seattle!
 </div>
 
@@ -65,7 +69,6 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <div class="news-item">
 <strong>Jan. 2026</strong>&nbsp; We just released our CausalFM toolkit (<a href="https://causalfm-toolkit.readthedocs.io/en/latest/">docs link</a>), welcome to have a try!
 </div>
-
 
 <div class="news-item">
 <strong>Sep. 2025</strong>&nbsp; One paper is accepted by <strong>NeurIPS 2025</strong>. See you in San Diego!
@@ -83,7 +86,7 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 </div>
 
 
-<!-- ## Education
+## Education
 
 <div class="education-container">
   <div class="education-item">
@@ -94,34 +97,34 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
     <div class="education-content">
       <div class="education-degree">Ph.D. in Computer Science</div>
       <div class="education-school"><img src='assets/img/LMU.png' style='height: 1.3em; vertical-align: middle;'> LMU Munich, Germany</div>
-      <div class="education-school">Advisor: Prof. Stefan Feuerriegel</div>
+      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=en">Prof. Stefan Feuerriegel</a></div>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <div class="education-item">
+  <div class="education-item">
     <div class="education-period">
       <strong>Oct. 2019</strong><br>
       <strong>Sep. 2022</strong>
     </div>
     <div class="education-content">
       <div class="education-degree">M.Sc. in Mathematics & Computer Vision (NLP specialization)</div>
-      <div class="education-school"><img src='assets/img/Universität_Heidelberg.png' style='height: 1.3em; vertical-align: middle;'>Heidelberg University, Germany</div>
-      <div class="education-school">Advisor: Prof. Zeynep Akata</div>
-</div>
-</div> -->
+      <div class="education-school"><img src='assets/img/Heidelberg_University.png' style='height: 1.3em; vertical-align: middle;'>Heidelberg University, Germany</div>
+      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=jQl17zsAAAAJ&hl=en">Prof. Zeynep Akata</a></div>
+    </div>
+  </div>
 
-  <!-- <div class="education-item">
+  <div class="education-item">
     <div class="education-period">
       <strong>Sep. 2015</strong><br>
       <strong>Jun. 2019</strong>
     </div>
     <div class="education-content">
       <div class="education-degree">B.Sc. in Mathematics</div>
-      <div class="education-school"><img src='assets/img/Shandong_University_Emblem.png' style='height: 1.3em; vertical-align: middle;'>Shandong University, China</div>
-      <div class="education-school">Advisor: Prof. Guanghui Wang</div>
+      <div class="education-school"><img src='assets/img/shandong-university-logo.jpg' style='height: 1.3em; vertical-align: middle;'>Shandong University, China</div>
+      <div class="education-school">Advisor: <a href="https://scholar.google.com/citations?user=3WJMVQQAAAAJ&hl=en">Prof. Guanghui Wang</a></div>
+    </div>
+  </div>
 </div>
-</div>
-</div> -->
 
 ## Publications
 
@@ -161,9 +164,20 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
 <p><span class="conference">Under Review</span></p>
 </div> -->
 
-<!-- ## Experience -->
+## Experience
 
-<!-- <div class="internship-container">
+<div class="internship-container">
+  <div class="internship-item">
+    <div class="internship-period">
+      <strong>Jun. 2026</strong><br>
+      <strong>Sep. 2026</strong>
+    </div>
+    <div class="internship-content">
+      <div class="internship-position">Research Intern</div>
+      <div class="internship-company"><img src='assets/img/Microsoft_logo.svg.png' style='height: 1.5em; vertical-align: middle;'> Microsoft Research</div>
+    </div>
+  </div>
+
   <div class="internship-item">
     <div class="internship-period">
       <strong>Jun. 2021</strong><br>
@@ -175,17 +189,7 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
     </div>
   </div>
 
-  <div class="internship-item">
-    <div class="internship-period">
-      <strong>Dec. 2022</strong><br>
-      <strong>Aug. 2025</strong>
-    </div>
-    <div class="internship-content">
-      <div class="internship-position">Teaching Assistant – Advanced AI in Businesses and Organizations</div>
-      <div class="internship-company"><img src='assets/img/LMU.png' style='height: 1.5em; vertical-align: middle;'> LMU Munich</div>
-    </div>
-  </div>
-</div> -->
+</div>
 
 <!-- ## Service & Talks
 
