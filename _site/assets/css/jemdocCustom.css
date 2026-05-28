@@ -228,36 +228,40 @@ h3 { font-family: var(--sans); font-size: 0.98rem; font-weight: 600; margin: 4px
 .interest-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
-    margin: 4px 0 2px;
+    gap: 8px;
+    margin: 4px 0 6px;
 }
 
 .interest {
-    padding: 4px 12px;
+    display: inline-block;
+    padding: 6px 14px;
     background: var(--bg-soft);
     border: 1px solid var(--rule);
     border-radius: 99px;
-    font-size: 0.82rem;
+    font-size: 0.86rem;
     font-weight: 500;
     color: var(--ink);
     letter-spacing: -0.005em;
+    line-height: 1.4;
+    white-space: nowrap;
 }
 
 /* ─── NEWS RAIL ──────────────────────────────────────────── */
 .news-rail { display: flex; flex-direction: column; }
 
 .news-row {
-    display: grid;
-    grid-template-columns: 82px 1fr;
-    gap: 18px;
-    padding: 6px 0;
+    display: flex;
+    flex-direction: row;
     align-items: baseline;
+    gap: 18px;
+    padding: 7px 0;
     border-bottom: 1px dotted var(--rule);
 }
 
 .news-row:last-child { border-bottom: none; }
 
 .news-when {
+    flex: 0 0 82px;
     font-family: var(--mono);
     font-size: 0.72rem;
     color: var(--ink-3);
@@ -267,6 +271,8 @@ h3 { font-family: var(--sans); font-size: 0.98rem; font-weight: 600; margin: 4px
 }
 
 .news-what {
+    flex: 1 1 auto;
+    min-width: 0;
     font-size: 0.88rem;
     line-height: 1.55;
     color: var(--ink-2);
@@ -277,19 +283,31 @@ h3 { font-family: var(--sans); font-size: 0.98rem; font-weight: 600; margin: 4px
 .news-what a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* ─── PUBLICATIONS ───────────────────────────────────────── */
-.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub-list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+}
 
 .pub {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 14px;
-    align-items: start;
-    padding: 9px 0;
+    padding: 10px 0;
     border-bottom: 1px dotted var(--rule);
+    list-style: none;
 }
 
 .pub:last-child { border-bottom: none; }
-.pub-body { min-width: 0; }
+
+.pub::before, .pub::marker { display: none !important; content: none !important; }
+
+.pub-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
 
 .pub-title {
     font-family: var(--sans);
@@ -301,7 +319,10 @@ h3 { font-family: var(--sans); font-size: 0.98rem; font-weight: 600; margin: 4px
     letter-spacing: -0.01em;
 }
 
-.pub-title a { color: var(--ink); border-bottom: 1px solid transparent; }
+.pub-title a {
+    color: var(--ink);
+    border-bottom: 1px solid transparent;
+}
 .pub-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .pub-authors {
@@ -314,32 +335,45 @@ h3 { font-family: var(--sans); font-size: 0.98rem; font-weight: 600; margin: 4px
 .pub-authors strong { color: var(--accent); font-weight: 600; }
 
 .pub-venue {
-    padding: 2px 9px;
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 3px 10px;
     background: var(--ink);
     color: var(--bg);
     font-family: var(--mono);
-    font-size: 0.66rem;
+    font-size: 0.68rem;
     font-weight: 500;
     border-radius: 4px;
     white-space: nowrap;
     letter-spacing: 0.02em;
-    margin-top: 4px;
-    height: fit-content;
+    margin-top: 3px;
+    width: auto;
+    max-width: max-content;
+    align-self: flex-start;
 }
 
 /* ─── EDUCATION / EXPERIENCE RAIL ────────────────────────── */
 .rail { display: flex; flex-direction: column; }
 
 .rail-row {
-    display: grid;
-    grid-template-columns: 150px 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 18px;
     padding: 8px 0;
     border-bottom: 1px dotted var(--rule);
-    align-items: start;
 }
 
 .rail-row:last-child { border-bottom: none; }
+
+.rail-when {
+    flex: 0 0 150px;
+}
+
+.rail-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
 
 .rail-when {
     font-family: var(--mono);
@@ -451,13 +485,14 @@ h3 { font-family: var(--sans); font-size: 0.98rem; font-weight: 600; margin: 4px
     .hero-title { font-size: 1.3rem; }
     .hero-title-zh { display: block; margin-left: 0; vertical-align: 0; margin-top: 3px; }
 
-    .pub { grid-template-columns: 1fr; gap: 4px; }
-    .pub-venue { justify-self: start; margin-top: 2px; }
+    .pub { flex-direction: column; gap: 6px; }
+    .pub-venue { align-self: flex-start; margin-top: 0; }
 
-    .rail-row { grid-template-columns: 1fr; gap: 2px; }
-    .rail-when { padding-top: 0; }
+    .rail-row { flex-direction: column; gap: 3px; }
+    .rail-when { flex: 0 0 auto; }
 
-    .news-row { grid-template-columns: 72px 1fr; gap: 12px; }
+    .news-row { gap: 12px; }
+    .news-when { flex: 0 0 72px; }
 
     .menu-items-container { gap: 0.8rem; }
 }
