@@ -79,57 +79,43 @@ hero: true
 
 <section class="section" id="publications">
 <h2 class="section-h">Publications</h2>
-<ol class="pub-list">
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title"><a href="https://arxiv.org/abs/2602.12394">Synthetic Interaction Data for Scalable Personalization in Large Language Models</a></h3>
-      <p class="pub-authors"><strong>Yuchen Ma</strong>, Yue Huang, Wenjie Wang, Xiaonan Luo, Xiangliang Zhang, Stefan Feuerriegel</p>
-    </div>
-    <span class="pub-venue">KDD 2026</span>
-  </li>
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title"><a href="https://arxiv.org/abs/2602.12966">ProbeLLM: Automating Principled Diagnosis of LLM Failures</a></h3>
-      <p class="pub-authors">Yue Huang, Zhengzhe Jiang, <strong>Yuchen Ma</strong>, Yu Jiang, Xiangqi Wang, Yujun Zhou, Yuexing Hao, Kehan Guo, Pin-Yu Chen, Stefan Feuerriegel, Xiangliang Zhang</p>
-    </div>
-    <span class="pub-venue">ICML 2026</span>
-  </li>
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title">Foundation Models for Causal Inference via Prior-Data Fitted Networks</h3>
-      <p class="pub-authors"><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel</p>
-    </div>
-    <span class="pub-venue">ICLR 2026</span>
-  </li>
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title">LLM-based Treatment Effect Estimation under Inference Time Text Confounding</h3>
-      <p class="pub-authors"><strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel</p>
-    </div>
-    <span class="pub-venue">NeurIPS 2025</span>
-  </li>
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title">A Diffusion-Based Method for Learning the Multi-Outcome Distribution of Medical Treatments</h3>
-      <p class="pub-authors"><strong>Yuchen Ma</strong>, Jonas Schweisthal, Hengrui Zhang, Stefan Feuerriegel</p>
-    </div>
-    <span class="pub-venue">KDD 2025</span>
-  </li>
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title">DiffPO: A Causal Diffusion Model for Learning Distributions of Potential Outcomes</h3>
-      <p class="pub-authors"><strong>Yuchen Ma</strong>, Valentyn Melnychuk, Jonas Schweisthal, Stefan Feuerriegel</p>
-    </div>
-    <span class="pub-venue">NeurIPS 2024</span>
-  </li>
-  <li class="pub">
-    <div class="pub-body">
-      <h3 class="pub-title">Distilling Knowledge from Self-Supervised Teacher by Embedding Graph Alignment</h3>
-      <p class="pub-authors"><strong>Yuchen Ma</strong>, Yanbei Chen, Zeynep Akata</p>
-    </div>
-    <span class="pub-venue">BMVC 2022</span>
-  </li>
-</ol>
+<div class="pub-list">
+  <div class="pub">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2602.12394">Synthetic Interaction Data for Scalable Personalization in Large Language Models</a></div>
+    <div class="pub-authors"><strong>Yuchen Ma</strong>, Yue Huang, Wenjie Wang, Xiaonan Luo, Xiangliang Zhang, Stefan Feuerriegel</div>
+    <div class="pub-venue">KDD 2026</div>
+  </div>
+  <div class="pub">
+    <div class="pub-title"><a href="https://arxiv.org/abs/2602.12966">ProbeLLM: Automating Principled Diagnosis of LLM Failures</a></div>
+    <div class="pub-authors">Yue Huang, Zhengzhe Jiang, <strong>Yuchen Ma</strong>, Yu Jiang, Xiangqi Wang, Yujun Zhou, Yuexing Hao, Kehan Guo, Pin-Yu Chen, Stefan Feuerriegel, Xiangliang Zhang</div>
+    <div class="pub-venue">ICML 2026</div>
+  </div>
+  <div class="pub">
+    <div class="pub-title">Foundation Models for Causal Inference via Prior-Data Fitted Networks</div>
+    <div class="pub-authors"><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel</div>
+    <div class="pub-venue">ICLR 2026</div>
+  </div>
+  <div class="pub">
+    <div class="pub-title">LLM-based Treatment Effect Estimation under Inference Time Text Confounding</div>
+    <div class="pub-authors"><strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel</div>
+    <div class="pub-venue">NeurIPS 2025</div>
+  </div>
+  <div class="pub">
+    <div class="pub-title">A Diffusion-Based Method for Learning the Multi-Outcome Distribution of Medical Treatments</div>
+    <div class="pub-authors"><strong>Yuchen Ma</strong>, Jonas Schweisthal, Hengrui Zhang, Stefan Feuerriegel</div>
+    <div class="pub-venue">KDD 2025</div>
+  </div>
+  <div class="pub">
+    <div class="pub-title">DiffPO: A Causal Diffusion Model for Learning Distributions of Potential Outcomes</div>
+    <div class="pub-authors"><strong>Yuchen Ma</strong>, Valentyn Melnychuk, Jonas Schweisthal, Stefan Feuerriegel</div>
+    <div class="pub-venue">NeurIPS 2024</div>
+  </div>
+  <div class="pub">
+    <div class="pub-title">Distilling Knowledge from Self-Supervised Teacher by Embedding Graph Alignment</div>
+    <div class="pub-authors"><strong>Yuchen Ma</strong>, Yanbei Chen, Zeynep Akata</div>
+    <div class="pub-venue">BMVC 2022</div>
+  </div>
+</div>
 </section>
 
 <section class="section" id="education">
