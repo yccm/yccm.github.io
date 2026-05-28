@@ -43,16 +43,16 @@ hero: true
 <h2 class="section-h">News</h2>
 <div class="news-rail">
   <div class="news-row">
+    <span class="news-when">May 2026</span>
+    <span class="news-what">Two papers accepted at <strong>KDD 2026</strong> and <strong>ICML 2026</strong>.</span>
+  </div>
+  <div class="news-row">
     <span class="news-when">Apr 2026</span>
     <span class="news-what">Organizing the <a href="https://kdd26-relscifm.github.io/"><strong>RelSciFM @ KDD 2026</strong></a> workshop on Reliable Scientific Foundation Models. <strong>Call for Papers</strong> open — submission deadline April 30, 2026.</span>
   </div>
   <div class="news-row">
     <span class="news-when">Mar 2026</span>
     <span class="news-what">Joining <strong>Microsoft Research</strong> as a research intern this summer.</span>
-  </div>
-  <div class="news-row">
-    <span class="news-when">May 2026</span>
-    <span class="news-what">Two papers accepted at <strong>KDD 2026</strong> and <strong>ICML 2026</strong>.</span>
   </div>
   <div class="news-row">
     <span class="news-when">Jan 2026</span>
