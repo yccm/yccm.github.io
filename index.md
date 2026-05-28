@@ -184,7 +184,7 @@ I’m very happy to [connect and discuss potential collaborations](mailto:yuchen
       <strong>Feb. 2022</strong>
     </div>
     <div class="internship-content">
-      <div class="internship-position">Research Assistant – Computer Vision & Knowledge Distillation</div>
+      <div class="internship-position">Researcher</div>
       <div class="internship-company"><img src='assets/img/Max-Planck-Gesellschaft.png' style='height: 1.5em; vertical-align: middle;'>Max Planck Institute</div>
     </div>
   </div>
