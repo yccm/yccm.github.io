@@ -27,10 +27,10 @@ hero: true
 
 <section class="section" id="news">
 <h2 class="section-h">News</h2>
-<div class="news-rail">
+<div class="news-rail" data-collapsed="true">
   <div class="news-row">
     <span class="news-when">Jun 2026</span>
-    <span class="news-what">Joining <strong>Microsoft Research</strong> as a research intern this summer.</span>
+    <span class="news-what">Joining <strong>Microsoft Research</strong> as a research intern this summer. I'll be in Seattle this summer, happy to meet for a coffee chat!</span>
   </div>
   <div class="news-row">
     <span class="news-when">May 2026</span>
@@ -38,11 +38,11 @@ hero: true
   </div>
   <div class="news-row">
     <span class="news-when">May 2026</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2602.12394">One paper</a> accepted at <strong>KDD 2026</strong>.</span>
+    <span class="news-what"><a href="https://arxiv.org/abs/2602.12394">One paper</a> accepted at <strong>KDD 2026</strong>. See you in Jeju!</span>
   </div>
   <div class="news-row">
     <span class="news-when">May 2026</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2602.12966">One paper</a> accepted at <strong>ICML 2026</strong>.</span>
+    <span class="news-what"><a href="https://arxiv.org/abs/2602.12966">One paper</a> accepted at <strong>ICML 2026</strong>. See you in Seoul!</span>
   </div>
   <div class="news-row">
     <span class="news-when">Apr 2026</span>
@@ -50,24 +50,25 @@ hero: true
   </div>
   <div class="news-row">
     <span class="news-when">Jan 2026</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2506.10914">One paper</a> accepted at <strong>ICLR 2026</strong>.</span>
+    <span class="news-what"><a href="https://arxiv.org/abs/2506.10914">One paper</a> accepted at <strong>ICLR 2026</strong>. See you in Rio de Janeiro!</span>
   </div>
   <div class="news-row">
     <span class="news-when">Jan 2026</span>
     <span class="news-what">Released the <strong>CausalFM toolkit</strong> — <a href="https://causalfm-toolkit.readthedocs.io/en/latest/">docs</a>.</span>
   </div>
-  <div class="news-row">
+  <div class="news-row news-row--old">
     <span class="news-when">Sep 2025</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2507.02843">One paper</a> accepted at <strong>NeurIPS 2025</strong>.</span>
+    <span class="news-what"><a href="https://arxiv.org/abs/2507.02843">One paper</a> accepted at <strong>NeurIPS 2025</strong>. See you in San Diego!</span>
   </div>
-  <div class="news-row">
+  <div class="news-row news-row--old">
     <span class="news-when">May 2025</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2506.01533">One paper</a> accepted at <strong>KDD 2025</strong>.</span>
+    <span class="news-what"><a href="https://arxiv.org/abs/2506.01533">One paper</a> accepted at <strong>KDD 2025</strong>. See you in Toronto!</span>
   </div>
-  <div class="news-row">
+  <div class="news-row news-row--old">
     <span class="news-when">Sep 2024</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2410.08924">One paper</a> accepted at <strong>NeurIPS 2024</strong>.</span>
+    <span class="news-what"><a href="https://arxiv.org/abs/2410.08924">One paper</a> accepted at <strong>NeurIPS 2024</strong>. See you in Vancouver!</span>
   </div>
+  <button class="news-toggle" type="button">Show all news</button>
 </div>
 </section>
 
