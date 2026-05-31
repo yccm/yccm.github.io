@@ -196,14 +196,28 @@ div.menu-item   { display: inline-block; padding: 0; }
 .hero-bio a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .hero-links {
-    margin: 4px 0 0;
+    margin: 0 0 22px;
     font-size: 0.86rem;
     color: var(--ink-2);
 }
 
-.hero-links a { color: var(--ink); font-weight: 500; }
+.hero-links a {
+    color: var(--ink);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
 .hero-links a:hover { color: var(--accent); }
+.hero-links a:hover .hl-icon { fill: var(--accent); }
 .hero-links .sep { color: var(--rule); margin: 0 5px; }
+.hl-icon {
+    width: 14px;
+    height: 14px;
+    fill: var(--ink-2);
+    flex-shrink: 0;
+    transition: fill 0.15s ease;
+}
 
 /* ─── SECTION FRAMEWORK ──────────────────────────────────── */
 .section {
