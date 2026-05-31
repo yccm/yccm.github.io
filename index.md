@@ -20,6 +20,8 @@ hero: true
         <a href="{{ site.github_link }}">GitHub</a>
         <span class="sep">·</span>
         <a href="{{ site.linkedin }}">LinkedIn</a>
+        <span class="sep">·</span>
+        <a href="https://x.com/Yuchen_yccm">X</a>
       </p>
     </div>
   </div>
