@@ -110,7 +110,11 @@ hero: true
 
 <div class="project-row">
   <div class="project-image">
-    <img src="assets/img/proj_causalfm.png" alt="Causal Foundation Models"/>
+    <div class="project-image-split">
+      <img src="assets/img/proj_causalfm.png" alt="Causal graphs for causal inference settings" style="flex: 3.42 1 0"/>
+      <img src="assets/img/proj_dime_intro.png" alt="Multi-outcome distribution of treatments" style="flex: 3.02 1 0"/>
+    </div>
+    <img src="assets/img/proj_dime.png" alt="Diffusion-based estimation of multi-outcome distributions"/>
   </div>
   <div class="project-text">
     <h3 class="project-title">Causal Foundation Models</h3>
@@ -223,6 +227,7 @@ hero: true
     {
       title: "LLM-based Treatment Effect Estimation under Inference Time Text Confounding",
       thumb: "assets/img/pub_llmtca.png",
+      thumbClass: "thumb-sm",
       link: "https://arxiv.org/abs/2507.02843",
       authors: "<strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel",
       venue: "NeurIPS",
@@ -317,7 +322,7 @@ hero: true
       ? `${paper.venue} (${paper.year})`
       : `<strong>${paper.venue}</strong> (${paper.year})`;
     const thumbHtml = paper.thumb
-      ? `<a class="paper-thumb" href="${paper.link}" target="_blank" rel="noopener noreferrer"><img src="${paper.thumb}" alt="${paper.title}" loading="lazy" decoding="async"/></a>`
+      ? `<a class="paper-thumb ${paper.thumbClass || ""}" href="${paper.link}" target="_blank" rel="noopener noreferrer"><img src="${paper.thumb}" alt="${paper.title}" loading="lazy" decoding="async"/></a>`
       : "";
     return `
       <div class="paper-item">
