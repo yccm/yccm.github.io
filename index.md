@@ -3,25 +3,28 @@ layout: homepage
 hero: true
 ---
 
-<section class="hero">
+<section class="hero" id="about">
   <div class="hero-grid">
-    <div class="hero-avatar-wrap">
-      <img class="hero-avatar" src="{{ site.avatar }}" alt="{{ site.title }}" loading="eager" decoding="async"/>
-    </div>
     <div class="hero-text">
-      <h1 class="hero-title">Yuchen Ma <span class="hero-title-zh">马羽宸</span></h1>
-      <p class="hero-links">
-        <a href="mailto:yuchen.ma@lmu.de" aria-label="Email"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V18h16V7.4l-8 5.4-8-5.4Zm.7-.4 7.3 4.95L19.3 7H4.7Z"/></svg>Email</a>
-        <span class="sep">·</span>
-        <a href="{{site.google_scholar}}" aria-label="Google Scholar"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 9l4 2.55V16l7 4.5L19 16v-4.45l3-1.9V16h2V9L12 2Zm0 2.27L20.27 9 12 14.27 3.73 9 12 4.27ZM7 13.18l5 3.32 5-3.32V14.6l-5 3.2-5-3.2v-1.42Z"/></svg>Scholar</a>
-        <span class="sep">·</span>
-        <a href="{{ site.github_link }}" aria-label="GitHub"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.13-4.55-5.04 0-1.11.39-2.02 1.03-2.74-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.74 0 3.92-2.34 4.78-4.57 5.03.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49C19.13 20.62 22 16.78 22 12.25 22 6.58 17.52 2 12 2Z"/></svg>GitHub</a>
-        <span class="sep">·</span>
-        <a href="{{ site.linkedin }}" aria-label="LinkedIn"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4v11H3v-11Zm6.5 0H13v1.6h.05c.5-.95 1.73-1.95 3.55-1.95 3.8 0 4.5 2.5 4.5 5.7V20.5h-4V15.4c0-1.22-.02-2.8-1.7-2.8-1.7 0-1.96 1.33-1.96 2.7V20.5h-4v-11Z"/></svg>LinkedIn</a>
-        <span class="sep">·</span>
-        <a href="https://x.com/Yuchen_yccm" aria-label="X"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308L14.32 10.51l8.52 11.24h-6.673l-5.21-6.83-5.96 6.83H1.69l7.71-8.83L1.25 2.25h6.84l4.71 6.23 5.444-6.23Zm-1.16 17.52h1.83L7.07 4.13H5.13l11.954 15.64Z"/></svg>X</a>
+      <h1 class="hero-title"><span class="hero-first">Yuchen</span> Ma <span class="hero-title-zh">马羽宸</span></h1>
+      <p class="hero-bio">I am a Ph.D. student in Computer Science at <a href="https://www.lmu.de/en/">LMU Munich</a>, supervised by <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de">Prof. Stefan Feuerriegel</a>. Currently, I am a research intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, working with Swadheen Shukla and Michel Galley.</p>
+      <p class="hero-bio">My research interests are in agentic AI, large language models, and causal inference. Here are some core problems I am thinking about:</p>
+      <ul class="hero-bio">
+        <li>How can we build foundation models that reason about cause and effect?</li>
+        <li>How can LLMs adapt to individual users at scale?</li>
+        <li>How can agents improve themselves by learning verified skills from their own experience?</li>
+      </ul>
+      <p class="hero-bio">I'm happy to <a href="mailto:yuchen.ma@lmu.de">connect and discuss potential collaborations</a>.</p>
+    </div>
+    <div class="hero-side">
+      <img class="hero-avatar" src="{{ site.avatar }}" alt="{{ site.title }}" loading="eager" decoding="async"/>
+      <p class="hero-icons">
+        <a href="mailto:yuchen.ma@lmu.de" aria-label="Email" title="Email"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V18h16V7.4l-8 5.4-8-5.4Zm.7-.4 7.3 4.95L19.3 7H4.7Z"/></svg></a>
+        <a href="{{site.google_scholar}}" aria-label="Google Scholar" title="Google Scholar"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 9l4 2.55V16l7 4.5L19 16v-4.45l3-1.9V16h2V9L12 2Zm0 2.27L20.27 9 12 14.27 3.73 9 12 4.27ZM7 13.18l5 3.32 5-3.32V14.6l-5 3.2-5-3.2v-1.42Z"/></svg></a>
+        <a href="{{ site.github_link }}" aria-label="GitHub" title="GitHub"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.13-4.55-5.04 0-1.11.39-2.02 1.03-2.74-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.74 0 3.92-2.34 4.78-4.57 5.03.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49C19.13 20.62 22 16.78 22 12.25 22 6.58 17.52 2 12 2Z"/></svg></a>
+        <a href="{{ site.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4v11H3v-11Zm6.5 0H13v1.6h.05c.5-.95 1.73-1.95 3.55-1.95 3.8 0 4.5 2.5 4.5 5.7V20.5h-4V15.4c0-1.22-.02-2.8-1.7-2.8-1.7 0-1.96 1.33-1.96 2.7V20.5h-4v-11Z"/></svg></a>
+        <a href="https://x.com/Yuchen_yccm" aria-label="X" title="X"><svg class="hl-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308L14.32 10.51l8.52 11.24h-6.673l-5.21-6.83-5.96 6.83H1.69l7.71-8.83L1.25 2.25h6.84l4.71 6.23 5.444-6.23Zm-1.16 17.52h1.83L7.07 4.13H5.13l11.954 15.64Z"/></svg></a>
       </p>
-      <p class="hero-bio">I am a PhD student in Computer Science at <a href="https://www.lmu.de/en/">LMU Munich</a>, supervised by <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de">Prof. Stefan Feuerriegel</a>. My research interests are in agentic AI, large language models, and causal inference. I'm happy to <a href="mailto:yuchen.ma@lmu.de">connect and discuss potential collaborations</a>.</p>
     </div>
   </div>
 </section>
@@ -73,44 +76,154 @@ hero: true
 </div>
 </section>
 
+<section class="section" id="projects">
+<h2 class="section-h">Selected Projects</h2>
+
+<div class="project-row">
+  <div class="project-image">
+    <img src="assets/img/proj_causalfm.png" alt="Causal Foundation Models"/>
+  </div>
+  <div class="project-text">
+    <h3 class="project-title">Causal Foundation Models</h3>
+    <p class="project-tagline"><small><em>We build foundation models that perform causal inference on new datasets in a training-free way via in-context learning.</em></small></p>
+    <p class="hl-label"><strong>Highlights:</strong></p>
+    <ul>
+      <li>
+        <p><a href="https://arxiv.org/abs/2506.10914" target="_blank" rel="noopener noreferrer">Foundation Models for Causal Inference via Prior-Data Fitted Networks</a>, <em>In ICLR 2026</em> &nbsp;(🧰 <a href="https://causalfm-toolkit.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">CausalFM Toolkit</a>)<br/>
+        <small><em>We introduce CausalFM, a comprehensive framework for training PFN-based foundation models in various causal inference settings, including back-door adjustment, front-door adjustment, and instrumental variables. CausalFM formalizes principled Bayesian priors based on structural causal models and enables Bayesian causal inference via in-context learning.</em></small></p>
+      </li>
+    </ul>
+    <p class="project-other"><strong>Other related works:</strong> <a href="https://arxiv.org/abs/2410.08924" target="_blank" rel="noopener noreferrer">DiffPO (NeurIPS'24)</a>, <a href="https://arxiv.org/abs/2506.01533" target="_blank" rel="noopener noreferrer">Multi-Outcome Distributions of Treatments (KDD'25)</a>, <a href="https://arxiv.org/abs/2507.02843" target="_blank" rel="noopener noreferrer">Treatment Effects under Text Confounding (NeurIPS'25)</a>, <a href="https://arxiv.org/abs/2310.17687" target="_blank" rel="noopener noreferrer">Counterfactual Fairness (CLeaR'26)</a></p>
+  </div>
+</div>
+
+<div class="project-row">
+  <div class="project-image">
+    <img src="assets/img/proj_personalize.png" alt="Personalized LLMs"/>
+  </div>
+  <div class="project-text">
+    <h3 class="project-title">Personalized LLMs</h3>
+    <p class="project-tagline"><small><em>We develop scalable approaches for adapting LLMs to individual users' preferences and latent constraints.</em></small></p>
+    <p class="hl-label"><strong>Highlights:</strong></p>
+    <ul>
+      <li>
+        <p><a href="https://arxiv.org/abs/2602.12394" target="_blank" rel="noopener noreferrer">Synthetic Interaction Data for Scalable Personalization in Large Language Models</a>, <em>In KDD 2026</em><br/>
+        <small><em>We introduce PersonaGym, a high-fidelity synthetic data generation framework that simulates dynamic, personalized user–LLM interactions at scale, and PPOpt, a personalized prompt optimizer trained with supervised fine-tuning and reinforcement learning to rewrite user prompts based on user profiles and interaction history.</em></small></p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="project-row">
+  <div class="project-image">
+    <img src="assets/img/proj_skillgen.png" alt="Agent Skill Synthesis"/>
+  </div>
+  <div class="project-text">
+    <h3 class="project-title">Agent Skill Synthesis</h3>
+    <p class="project-tagline"><small><em>We study how LLM agents can distill their own experience into reusable, verified skills that improve capabilities without retraining.</em></small></p>
+    <p class="hl-label"><strong>Highlights:</strong></p>
+    <ul>
+      <li>
+        <p><a href="https://arxiv.org/abs/2605.10999" target="_blank" rel="noopener noreferrer">SkillGen: Verified Inference-Time Agent Skill Synthesis</a>, <em>Preprint</em> &nbsp;(💻 <a href="https://github.com/yccm/SkillGen" target="_blank" rel="noopener noreferrer">Code</a>)<br/>
+        <small><em>SkillGen is a multi-agent framework that synthesizes a single auditable skill from trajectories generated by a base agent. It leverages contrastive induction over successful and failed trajectories and models skill synthesis as an intervention problem, with a gen–verify–refine loop that ensures a verified positive impact before deployment.</em></small></p>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
 <section class="section" id="publications">
-<h2 class="section-h">Publications</h2>
-<p class="pub-note">The full publication list can be found on my <a href="https://scholar.google.com/citations?hl=zh-CN&user=w6hmCEYAAAAJ">Google Scholar profile</a>.</p>
-<div class="pub-list">
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2602.12394">Synthetic Interaction Data for Scalable Personalization in Large Language Models</a></div>
-    <div class="pub-authors"><strong>Yuchen Ma</strong>, Yue Huang, Wenjie Wang, Xiaonan Luo, Xiangliang Zhang, Stefan Feuerriegel</div>
-    <div class="pub-venue">KDD 2026</div>
+<h2 class="section-h">Recent Preprints &amp; Publications</h2>
+<p class="pub-note">(*: Equal Contribution) &nbsp;·&nbsp; The full publication list can be found on my <a href="https://scholar.google.com/citations?hl=zh-CN&user=w6hmCEYAAAAJ">Google Scholar profile</a>.</p>
+
+<div class="pubitem">
+  <div class="pubtitle">SkillGen: Verified Inference-Time Agent Skill Synthesis</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>*, Yue Huang*, Han Bao, Haomin Zhuang, Swadheen Shukla, Michel Galley, Xiangliang Zhang, Stefan Feuerriegel</div>
+  <div class="pubinfo">Preprint (arXiv:2605.10999).</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2605.10999" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/SkillGen" target="_blank" rel="noopener noreferrer">code</a>
   </div>
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2602.12966">ProbeLLM: Automating Principled Diagnosis of LLM Failures</a></div>
-    <div class="pub-authors">Yue Huang, Zhengzhe Jiang, <strong>Yuchen Ma</strong>, Yu Jiang, Xiangqi Wang, Yujun Zhou, Yuexing Hao, Kehan Guo, Pin-Yu Chen, Stefan Feuerriegel, Xiangliang Zhang</div>
-    <div class="pub-venue">ICML 2026</div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">Synthetic Interaction Data for Scalable Personalization in Large Language Models</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Yue Huang, Wenjie Wang, Xiaonan Luo, Xiangliang Zhang, Stefan Feuerriegel</div>
+  <div class="pubinfo">In KDD 2026.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2602.12394" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/LLM-PPOpt" target="_blank" rel="noopener noreferrer">code</a>
   </div>
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2506.10914">Foundation Models for Causal Inference via Prior-Data Fitted Networks</a></div>
-    <div class="pub-authors"><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel</div>
-    <div class="pub-venue">ICLR 2026</div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">ProbeLLM: Automating Principled Diagnosis of LLM Failures</div>
+  <div class="pubauthors">Yue Huang, Zhengzhe Jiang, <strong>Yuchen Ma</strong>, Yu Jiang, Xiangqi Wang, Yujun Zhou, Yuexing Hao, Kehan Guo, Pin-Yu Chen, Stefan Feuerriegel, Xiangliang Zhang</div>
+  <div class="pubinfo">In ICML 2026.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2602.12966" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/HowieHwong/ProbeLLM" target="_blank" rel="noopener noreferrer">code</a>
   </div>
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2507.02843">LLM-based Treatment Effect Estimation under Inference Time Text Confounding</a></div>
-    <div class="pub-authors"><strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel</div>
-    <div class="pub-venue">NeurIPS 2025</div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">Foundation Models for Causal Inference via Prior-Data Fitted Networks</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Dennis Frauen, Emil Javurek, Stefan Feuerriegel</div>
+  <div class="pubinfo">In ICLR 2026.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2506.10914" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/CausalFM" target="_blank" rel="noopener noreferrer">code</a>
+    <a class="badge badge-web" href="https://causalfm-toolkit.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">toolkit</a>
   </div>
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2506.01533">A Diffusion-Based Method for Learning the Multi-Outcome Distribution of Medical Treatments</a></div>
-    <div class="pub-authors"><strong>Yuchen Ma</strong>, Jonas Schweisthal, Hengrui Zhang, Stefan Feuerriegel</div>
-    <div class="pub-venue">KDD 2025</div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">Consistent End-to-End Estimation for Counterfactual Fairness</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Valentyn Melnychuk, Dennis Frauen, Stefan Feuerriegel</div>
+  <div class="pubinfo">In CLeaR 2026.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2310.17687" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/consistent-estimation-gcfn" target="_blank" rel="noopener noreferrer">code</a>
   </div>
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2410.08924">DiffPO: A Causal Diffusion Model for Learning Distributions of Potential Outcomes</a></div>
-    <div class="pub-authors"><strong>Yuchen Ma</strong>, Valentyn Melnychuk, Jonas Schweisthal, Stefan Feuerriegel</div>
-    <div class="pub-venue">NeurIPS 2024</div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">LLM-based Treatment Effect Estimation under Inference Time Text Confounding</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel</div>
+  <div class="pubinfo">In NeurIPS 2025.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2507.02843" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/LLM-TCA" target="_blank" rel="noopener noreferrer">code</a>
   </div>
-  <div class="pub">
-    <div class="pub-title"><a href="https://arxiv.org/abs/2211.13264">Distilling Knowledge from Self-Supervised Teacher by Embedding Graph Alignment</a></div>
-    <div class="pub-authors"><strong>Yuchen Ma</strong>, Yanbei Chen, Zeynep Akata</div>
-    <div class="pub-venue">BMVC 2022</div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">A Diffusion-Based Method for Learning the Multi-Outcome Distribution of Medical Treatments</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Jonas Schweisthal, Hengrui Zhang, Stefan Feuerriegel</div>
+  <div class="pubinfo">In KDD 2025.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2506.01533" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/DIME" target="_blank" rel="noopener noreferrer">code</a>
+  </div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">DiffPO: A Causal Diffusion Model for Learning Distributions of Potential Outcomes</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Valentyn Melnychuk, Jonas Schweisthal, Stefan Feuerriegel</div>
+  <div class="pubinfo">In NeurIPS 2024.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2410.08924" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/DiffPO" target="_blank" rel="noopener noreferrer">code</a>
+  </div>
+</div>
+
+<div class="pubitem">
+  <div class="pubtitle">Distilling Knowledge from Self-Supervised Teacher by Embedding Graph Alignment</div>
+  <div class="pubauthors"><strong>Yuchen Ma</strong>, Yanbei Chen, Zeynep Akata</div>
+  <div class="pubinfo">In BMVC 2022.</div>
+  <div class="publinks">
+    <a class="badge badge-pdf" href="https://arxiv.org/abs/2211.13264" target="_blank" rel="noopener noreferrer">pdf</a>
+    <a class="badge badge-code" href="https://github.com/yccm/EGA" target="_blank" rel="noopener noreferrer">code</a>
   </div>
 </div>
 </section>
