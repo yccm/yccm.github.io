@@ -7,8 +7,9 @@ hero: true
   <div class="hero-grid">
     <div class="hero-text">
       <h1 class="hero-title">Yuchen Ma <span class="hero-title-zh">马羽宸</span></h1>
-      <p class="hero-bio">I am a Ph.D. student in Computer Science at <a href="https://www.lmu.de/en/">LMU Munich</a>, supervised by <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de">Prof. Stefan Feuerriegel</a>. Currently, I am a research intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, working with Swadheen Shukla and Michel Galley.</p>
-      <p class="hero-bio">My research interests are in agentic AI, large language models, and causal inference. I'm happy to <a href="mailto:yuchen.ma@lmu.de">connect and discuss potential collaborations</a>.</p>
+      <p class="hero-bio">I am a Ph.D. student in Computer Science at <a href="https://www.lmu.de/en/">LMU Munich</a> and the Munich Center for Machine Learning (MCML), supervised by <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de">Prof. Stefan Feuerriegel</a>. Before that, I received my M.Sc. in Mathematics &amp; Computer Vision from <a href="https://www.uni-heidelberg.de/en">Heidelberg University</a>.</p>
+      <p class="hero-bio">Currently, I am a research intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> in Seattle, working with Swadheen Shukla and Michel Galley on LLM agents.</p>
+      <p class="hero-bio">My research interests are in agentic AI, large language models, and causal inference. Specifically, I build causal foundation models, develop scalable methods for personalizing LLMs, study how LLM agents can distill verified, reusable skills, and explore how multiple agents interact and collaborate. I'm happy to <a href="mailto:yuchen.ma@lmu.de">connect and discuss potential collaborations</a>.</p>
     </div>
     <div class="hero-side">
       <img class="hero-avatar" src="{{ site.avatar }}" alt="{{ site.title }}" loading="eager" decoding="async"/>
@@ -75,33 +76,35 @@ hero: true
 
 <div class="project-row">
   <div class="project-image">
-    <img src="assets/img/proj_skillgen.png" alt="Agent Skill Synthesis"/>
+    <img src="assets/img/proj_skillgen.png" alt="Agent Harness"/>
   </div>
   <div class="project-text">
-    <h3 class="project-title">Agent Skill Synthesis</h3>
+    <h3 class="project-title">Agent Harness</h3>
     <p class="project-tagline"><em>We study how LLM agents can distill their own experience into reusable, verified skills that improve capabilities without retraining.</em></p>
     <p class="hl-label"><strong>Highlights:</strong></p>
     <ul>
       <li>
-        <p><a href="https://arxiv.org/abs/2605.10999" target="_blank" rel="noopener noreferrer">SkillGen: Verified Inference-Time Agent Skill Synthesis</a>, <em>Preprint</em> &nbsp;(💻 <a href="https://github.com/yccm/SkillGen" target="_blank" rel="noopener noreferrer">Code</a>)</p>
+        <p><a href="https://arxiv.org/abs/2605.10999" target="_blank" rel="noopener noreferrer">SkillGen: Verified Inference-Time Agent Skill Synthesis</a>, <em class="venue-tag">Preprint</em> &nbsp;(💻 <a href="https://github.com/yccm/SkillGen" target="_blank" rel="noopener noreferrer">Code</a>)</p>
       </li>
     </ul>
+    <p class="project-other"><strong>Other related works:</strong> <a href="https://arxiv.org/abs/2605.08503" target="_blank" rel="noopener noreferrer">NARRA-Gym for Evaluating Interactive Narrative Agents <span class="venue-tag">(Preprint)</span></a></p>
   </div>
 </div>
 
 <div class="project-row">
   <div class="project-image">
-    <img src="assets/img/proj_personalize.png" alt="Personalized LLMs"/>
+    <img src="assets/img/proj_personalize.png" alt="Applicable and Reliable LLMs"/>
   </div>
   <div class="project-text">
-    <h3 class="project-title">Personalized LLMs</h3>
+    <h3 class="project-title">Applicable and Reliable LLMs</h3>
     <p class="project-tagline"><em>We develop scalable approaches for adapting LLMs to individual users' preferences and latent constraints.</em></p>
     <p class="hl-label"><strong>Highlights:</strong></p>
     <ul>
       <li>
-        <p><a href="https://arxiv.org/abs/2602.12394" target="_blank" rel="noopener noreferrer">Synthetic Interaction Data for Scalable Personalization in Large Language Models</a>, <em>In KDD 2026</em> &nbsp;(💻 <a href="https://github.com/yccm/LLM-PPOpt" target="_blank" rel="noopener noreferrer">Code</a>)</p>
+        <p><a href="https://arxiv.org/abs/2602.12394" target="_blank" rel="noopener noreferrer">Synthetic Interaction Data for Scalable Personalization in Large Language Models</a>, <em class="venue-tag">In KDD 2026</em> &nbsp;(💻 <a href="https://github.com/yccm/LLM-PPOpt" target="_blank" rel="noopener noreferrer">Code</a>)</p>
       </li>
     </ul>
+    <p class="project-other"><strong>Other related works:</strong> <a href="https://arxiv.org/abs/2602.12966" target="_blank" rel="noopener noreferrer">ProbeLLM <span class="venue-tag">(ICML'26)</span></a>, <a href="https://arxiv.org/abs/2507.02843" target="_blank" rel="noopener noreferrer">Treatment Effects under Text Confounding <span class="venue-tag">(NeurIPS'25)</span></a></p>
   </div>
 </div>
 
@@ -115,10 +118,10 @@ hero: true
     <p class="hl-label"><strong>Highlights:</strong></p>
     <ul>
       <li>
-        <p><a href="https://arxiv.org/abs/2506.10914" target="_blank" rel="noopener noreferrer">Foundation Models for Causal Inference via Prior-Data Fitted Networks</a>, <em>In ICLR 2026</em> &nbsp;(🧰 <a href="https://causalfm-toolkit.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">CausalFM Toolkit</a>)</p>
+        <p><a href="https://arxiv.org/abs/2506.10914" target="_blank" rel="noopener noreferrer">Foundation Models for Causal Inference via Prior-Data Fitted Networks</a>, <em class="venue-tag">In ICLR 2026</em> &nbsp;(🧰 <a href="https://causalfm-toolkit.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">CausalFM Toolkit</a>)</p>
       </li>
     </ul>
-    <p class="project-other"><strong>Other related works:</strong> <a href="https://arxiv.org/abs/2410.08924" target="_blank" rel="noopener noreferrer">DiffPO (NeurIPS'24)</a>, <a href="https://arxiv.org/abs/2506.01533" target="_blank" rel="noopener noreferrer">Multi-Outcome Distributions of Treatments (KDD'25)</a>, <a href="https://arxiv.org/abs/2507.02843" target="_blank" rel="noopener noreferrer">Treatment Effects under Text Confounding (NeurIPS'25)</a>, <a href="https://arxiv.org/abs/2310.17687" target="_blank" rel="noopener noreferrer">Counterfactual Fairness (CLeaR'26)</a></p>
+    <p class="project-other"><strong>Other related works:</strong> <a href="https://arxiv.org/abs/2410.08924" target="_blank" rel="noopener noreferrer">DiffPO <span class="venue-tag">(NeurIPS'24)</span></a>, <a href="https://arxiv.org/abs/2506.01533" target="_blank" rel="noopener noreferrer">Multi-Outcome Distributions of Treatments <span class="venue-tag">(KDD'25)</span></a>, <a href="https://arxiv.org/abs/2507.02843" target="_blank" rel="noopener noreferrer">Treatment Effects under Text Confounding <span class="venue-tag">(NeurIPS'25)</span></a>, <a href="https://arxiv.org/abs/2310.17687" target="_blank" rel="noopener noreferrer">Counterfactual Fairness <span class="venue-tag">(CLeaR'26)</span></a></p>
   </div>
 </div>
 </section>
@@ -139,6 +142,7 @@ hero: true
   const papers = [
     {
       title: "SkillGen: Verified Inference-Time Agent Skill Synthesis",
+      thumb: "assets/img/pub_skillgen.png",
       link: "https://arxiv.org/abs/2605.10999",
       authors: "<strong>Yuchen Ma</strong>*, Yue Huang*, Han Bao, Haomin Zhuang, Swadheen Shukla, Michel Galley, Xiangliang Zhang, Stefan Feuerriegel",
       venue: "arXiv Preprint",
@@ -150,7 +154,22 @@ hero: true
       ]
     },
     {
+      title: "NARRA-Gym for Evaluating Interactive Narrative Agents",
+      thumb: "assets/img/pub_narragym.png",
+      link: "https://arxiv.org/abs/2605.08503",
+      authors: "Yue Huang*, <strong>Yuchen Ma</strong>*, Jiayi Ye*, Wenjie Wang, Zipeng Ling, Xingjian Hu, Yuexing Hao, Zichen Chen, Zhangchen Xu, Yunhong He, Zhengqing Yuan, Yujun Zhou, Kehan Guo, Chaoran Chen, Toby Jia-Jun Li, Stefan Feuerriegel, Xiangliang Zhang",
+      venue: "arXiv Preprint",
+      year: 2026,
+      tags: ["Agents", "LLM", "Evaluation"],
+      links: [
+        { label: "pdf", url: "https://arxiv.org/abs/2605.08503" },
+        { label: "code", url: "https://github.com/narra-gym/NARRA-Gym" },
+        { label: "website", url: "https://narra-gym.github.io/" }
+      ]
+    },
+    {
       title: "Synthetic Interaction Data for Scalable Personalization in Large Language Models",
+      thumb: "assets/img/pub_ppopt.png",
       link: "https://arxiv.org/abs/2602.12394",
       authors: "<strong>Yuchen Ma</strong>, Yue Huang, Wenjie Wang, Xiaonan Luo, Xiangliang Zhang, Stefan Feuerriegel",
       venue: "KDD",
@@ -163,6 +182,7 @@ hero: true
     },
     {
       title: "ProbeLLM: Automating Principled Diagnosis of LLM Failures",
+      thumb: "assets/img/pub_probellm.png",
       link: "https://arxiv.org/abs/2602.12966",
       authors: "Yue Huang*, Zhengzhe Jiang*, <strong>Yuchen Ma</strong>*, Yu Jiang, Xiangqi Wang, Yujun Zhou, Yuexing Hao, Kehan Guo, Pin-Yu Chen, Stefan Feuerriegel, Xiangliang Zhang",
       venue: "ICML",
@@ -175,6 +195,7 @@ hero: true
     },
     {
       title: "Foundation Models for Causal Inference via Prior-Data Fitted Networks",
+      thumb: "assets/img/pub_causalfm.png",
       link: "https://arxiv.org/abs/2506.10914",
       authors: "<strong>Yuchen Ma</strong>*, Dennis Frauen*, Emil Javurek, Stefan Feuerriegel",
       venue: "ICLR",
@@ -188,6 +209,7 @@ hero: true
     },
     {
       title: "Consistent End-to-End Estimation for Counterfactual Fairness",
+      thumb: "assets/img/pub_gcfn.png",
       link: "https://arxiv.org/abs/2310.17687",
       authors: "<strong>Yuchen Ma</strong>*, Valentyn Melnychuk*, Dennis Frauen, Stefan Feuerriegel",
       venue: "CLeaR",
@@ -200,6 +222,7 @@ hero: true
     },
     {
       title: "LLM-based Treatment Effect Estimation under Inference Time Text Confounding",
+      thumb: "assets/img/pub_llmtca.png",
       link: "https://arxiv.org/abs/2507.02843",
       authors: "<strong>Yuchen Ma</strong>, Dennis Frauen, Jonas Schweisthal, Stefan Feuerriegel",
       venue: "NeurIPS",
@@ -212,6 +235,7 @@ hero: true
     },
     {
       title: "A Diffusion-Based Method for Learning the Multi-Outcome Distribution of Medical Treatments",
+      thumb: "assets/img/pub_dime.png",
       link: "https://arxiv.org/abs/2506.01533",
       authors: "<strong>Yuchen Ma</strong>, Jonas Schweisthal, Hengrui Zhang, Stefan Feuerriegel",
       venue: "KDD",
@@ -224,6 +248,7 @@ hero: true
     },
     {
       title: "DiffPO: A Causal Diffusion Model for Learning Distributions of Potential Outcomes",
+      thumb: "assets/img/pub_diffpo.png",
       link: "https://arxiv.org/abs/2410.08924",
       authors: "<strong>Yuchen Ma</strong>, Valentyn Melnychuk, Jonas Schweisthal, Stefan Feuerriegel",
       venue: "NeurIPS",
@@ -236,6 +261,7 @@ hero: true
     },
     {
       title: "Distilling Knowledge from Self-Supervised Teacher by Embedding Graph Alignment",
+      thumb: "assets/img/pub_ega.png",
       link: "https://arxiv.org/abs/2211.13264",
       authors: "<strong>Yuchen Ma</strong>*, Yanbei Chen*, Zeynep Akata",
       venue: "BMVC",
@@ -290,12 +316,18 @@ hero: true
     const venueHtml = isPreprint(paper)
       ? `${paper.venue} (${paper.year})`
       : `<strong>${paper.venue}</strong> (${paper.year})`;
+    const thumbHtml = paper.thumb
+      ? `<a class="paper-thumb" href="${paper.link}" target="_blank" rel="noopener noreferrer"><img src="${paper.thumb}" alt="${paper.title}" loading="lazy" decoding="async"/></a>`
+      : "";
     return `
       <div class="paper-item">
-        <div class="title"><a href="${paper.link}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
-        <div class="authors">${paper.authors}</div>
-        <div class="paper-venue">${venueHtml} &nbsp; <span class="paper-links">${linksHtml}</span></div>
-        <div class="paper-tags">${tagHtml}</div>
+        <div class="paper-body">
+          <div class="title"><a href="${paper.link}" target="_blank" rel="noopener noreferrer">${paper.title}</a></div>
+          <div class="authors">${paper.authors}</div>
+          <div class="paper-venue">${venueHtml} &nbsp; <span class="paper-links">${linksHtml}</span></div>
+          <div class="paper-tags">${tagHtml}</div>
+        </div>
+        ${thumbHtml}
       </div>
     `;
   }
@@ -308,7 +340,7 @@ hero: true
   function renderPreprints() {
     const preprints = papers.filter(p => isPreprint(p) && paperMatchesFilter(p)).sort((a, b) => b.year - a.year);
     if (preprints.length === 0) return "";
-    let html = `<div class="year-header">Preprints</div>`;
+    let html = "";
     preprints.forEach(p => { html += renderPaperItem(p); });
     return html;
   }
@@ -422,8 +454,8 @@ hero: true
 </div>
 </section>
 
-<section class="section" id="work-experience">
-<h2 class="section-h">Work Experience</h2>
+<section class="section" id="experience">
+<h2 class="section-h">Experience</h2>
 
 <div class="edu-row">
   <div class="edu-main">

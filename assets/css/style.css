@@ -23,7 +23,6 @@ body {
   font-family: "Lato", "Noto Sans SC", Verdana, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.35;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -76,12 +75,12 @@ img { max-width: 100%; }
   padding: 0 20px 24px;
 }
 
-.section { margin-top: 42px; }
+.section { margin-top: 12px; }
 
 .section-h {
   font-size: 24px;
   font-weight: 700;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 }
 
 section[id], div[id] { scroll-margin-top: 62px; }
@@ -90,7 +89,7 @@ section[id], div[id] { scroll-margin-top: 62px; }
    Hero
    -------------------------------------------------------------------------- */
 
-.hero { margin-top: 26px; }
+.hero { margin-top: 16px; }
 
 .hero-grid {
   display: flex;
@@ -116,11 +115,11 @@ section[id], div[id] { scroll-margin-top: 62px; }
 .hero-bio { margin: 0 0 12px; }
 
 .hero-side {
-  flex: 0 0 250px;
+  flex: 0 0 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .hero-avatar {
@@ -191,7 +190,7 @@ section[id], div[id] { scroll-margin-top: 62px; }
 }
 
 .project-image {
-  flex: 0 0 500px;
+  flex: 0 0 560px;
   align-self: center;
 }
 .project-image img {
@@ -270,13 +269,36 @@ section[id], div[id] { scroll-margin-top: 62px; }
   margin-bottom: 12px;
 }
 
-.paper-item { margin-bottom: 14px; }
+.paper-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.paper-body { flex: 1 1 auto; min-width: 0; }
+
+.paper-thumb {
+  flex: 0 0 270px;
+  display: block;
+  padding-top: 2px;
+}
+.paper-thumb img {
+  width: 100%;
+  max-height: 135px;
+  object-fit: contain;
+  object-position: right top;
+  display: block;
+}
 
 .paper-item .title a { font-weight: 700; }
 
 .paper-links { font-size: 16px; }
 .paper-links a { margin-right: 10px; }
 
+.paper-venue { color: #e07000; }
+
+.venue-tag { color: #e07000; font-style: normal; }
 .paper-venue strong { font-weight: 700; }
 
 .paper-tags {
@@ -428,4 +450,8 @@ section[id], div[id] { scroll-margin-top: 62px; }
   .edu-logo img { max-width: 60px; max-height: 60px; }
 
   .news-row { flex-direction: column; gap: 0; margin-bottom: 10px; }
+
+  .paper-item { flex-direction: column; gap: 8px; }
+  .paper-thumb { flex: 0 0 auto; width: 100%; max-width: 340px; }
+  .paper-thumb img { max-height: 130px; object-position: left top; }
 }
