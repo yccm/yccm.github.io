@@ -29,7 +29,7 @@ hero: true
 <div class="news-rail" data-collapsed="true">
   <div class="news-row">
     <span class="news-when">Sep 2026</span>
-    <span class="news-what"><a href="https://arxiv.org/abs/2605.10999">SkillGen</a> and <a href="https://arxiv.org/abs/2605.08503">NARRA-Gym</a> accepted at <strong>NeurIPS 2026</strong>.</span>
+    <span class="news-what"><a href="#publications">Two papers</a> accepted at <strong>NeurIPS 2026</strong>. See you in Sydney!</span>
   </div>
   <div class="news-row">
     <span class="news-when">Jun 2026</span>
