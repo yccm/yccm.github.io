@@ -8,7 +8,7 @@ hero: true
     <div class="hero-text">
       <h1 class="hero-title">Yuchen Ma <span class="hero-title-zh">马羽宸</span></h1>
       <p class="hero-bio">I am a Ph.D. student in Computer Science at <a href="https://www.lmu.de/en/">LMU Munich</a> and the Munich Center for Machine Learning (MCML), supervised by <a href="https://scholar.google.com/citations?user=TtgGRnEAAAAJ&hl=de">Prof. Stefan Feuerriegel</a>. Before that, I received my M.Sc. in Mathematics &amp; Computer Vision from <a href="https://www.uni-heidelberg.de/en">Heidelberg University</a>.</p>
-      <p class="hero-bio">Currently, I am a research intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> in Seattle, working with Swadheen Shukla and Michel Galley on LLM agents.</p>
+      <p class="hero-bio">I interned at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> in Seattle from June to September 2026, working with Swadheen Shukla and Michel Galley. During my internship, I developed <a href="https://arxiv.org/abs/2610.14800">EAIR</a>, a framework for diagnosing and mitigating interaction risks in enterprise LLM multi-agent systems.</p>
       <p class="hero-bio">My research interests are in agentic AI, large language models, and causal inference. Specifically, I build causal foundation models, develop scalable methods for personalizing LLMs, study how LLM agents can distill verified, reusable skills, and explore how multiple agents interact and collaborate. I'm happy to <a href="mailto:yuchen.ma@lmu.de">connect and discuss potential collaborations</a>.</p>
     </div>
     <div class="hero-side">
@@ -27,6 +27,10 @@ hero: true
 <section class="section" id="news">
 <h2 class="section-h">News</h2>
 <div class="news-rail" data-collapsed="true">
+  <div class="news-row">
+    <span class="news-when">Oct 2026</span>
+    <span class="news-what">New preprint: <a href="https://arxiv.org/abs/2610.14800"><strong>EAIR: Interaction Risks in Enterprise LLM Multi-Agent Systems</strong></a>, developed during my internship at Microsoft Research. <a href="https://github.com/microsoft/EAIR">Toolkit</a>.</span>
+  </div>
   <div class="news-row">
     <span class="news-when">Sep 2026</span>
     <span class="news-what"><a href="#publications">Two papers</a> accepted at <strong>NeurIPS 2026</strong>. See you in Sydney!</span>
@@ -148,6 +152,18 @@ hero: true
 <div id="publications-container"></div>
 <script>
   const papers = [
+    {
+      title: "EAIR: Interaction Risks in Enterprise LLM Multi-Agent Systems",
+      link: "https://arxiv.org/abs/2610.14800",
+      authors: "<strong>Yuchen Ma</strong>, Swadheen Shukla, Paulo Salem, Yue Huang, Robert Sim, Stefan Feuerriegel, Michel Galley, Jianfeng Gao",
+      venue: "arXiv Preprint",
+      year: 2026,
+      tags: ["Agents", "LLM", "Evaluation"],
+      links: [
+        { label: "pdf", url: "https://arxiv.org/abs/2610.14800" },
+        { label: "toolkit", url: "https://github.com/microsoft/EAIR" }
+      ]
+    },
     {
       title: "SkillGen: Verified Inference-Time Agent Skill Synthesis",
       thumb: "assets/img/pub_skillgen.png",
@@ -472,6 +488,7 @@ hero: true
     <div class="edu-details">
       <div>Microsoft Research, Seattle, U.S.</div>
       <div><strong>Advisors:</strong> Swadheen Shukla, Michel Galley</div>
+      <div>Developed <a href="https://arxiv.org/abs/2610.14800">EAIR</a> for diagnosing and mitigating enterprise multi-agent interaction risks, with a testable risk taxonomy, executable micro-worlds, and trace-guided workflow repair.</div>
     </div>
   </div>
   <div class="edu-logo"><img src="assets/img/Microsoft_logo.svg.png" alt="Microsoft Research"/></div>
