@@ -169,7 +169,7 @@ hero: true
       title: "MemoHarness: Agent Harnesses That Learn from Experience",
       thumb: "assets/img/pub_memoharness.png",
       link: "https://arxiv.org/abs/2607.14159",
-      authors: "Yue Huang, Wenjie Wang, Han Bao, <strong>Yuchen Ma</strong>, Xiaonan Luo, Yi Nian, Haomin Zhuang, Zheyuan Liu, Yue Zhao, Xiangliang Zhang",
+      authors: "Yue Huang*, Wenjie Wang*, Han Bao*, <strong>Yuchen Ma</strong>, Xiaonan Luo, Yi Nian, Haomin Zhuang, Zheyuan Liu, Yue Zhao, Xiangliang Zhang",
       venue: "arXiv Preprint",
       year: 2026,
       tags: ["Agents", "LLM"],
