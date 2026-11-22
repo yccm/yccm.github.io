@@ -29,7 +29,7 @@ hero: true
 <div class="news-rail" data-collapsed="true">
   <div class="news-row">
     <span class="news-when">Oct 2026</span>
-    <span class="news-what">New first-author preprint: <a href="https://arxiv.org/abs/2610.14800"><strong>EAIR: Interaction Risks in Enterprise LLM Multi-Agent Systems</strong></a>, developed during my internship at Microsoft Research. <a href="https://github.com/microsoft/EAIR">Toolkit</a>.</span>
+    <span class="news-what">New first-author <a href="https://arxiv.org/abs/2610.14800">preprint</a> from my internship at <strong>Microsoft Research</strong>, with a <a href="https://github.com/microsoft/EAIR">toolkit</a>.</span>
   </div>
   <div class="news-row">
     <span class="news-when">Sep 2026</span>
